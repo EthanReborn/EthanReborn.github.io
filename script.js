@@ -183,6 +183,9 @@ var adjectives = [
     "mutant",
     "mutated",
     "nuclear",
+    "autistic",
+    "obese",
+    "fat",
 ];
 
 //verbs
@@ -256,16 +259,16 @@ var firstNames = [
     "Gobsmack",
     "Nick",
     "Ballsac",
+    "Lord",
+    "King",
 ];
 
 //lastnames
 var lastNames = [
-    "Magmaback",
     "GoatSucker",
     "RatHumper",
     "NippleTwister",
     "Boulderbender",
-    "Bonegut",
     "Goldbringer",
     "Runeforged",
     "Bottlestone",
@@ -318,6 +321,8 @@ var lastNames = [
     "ButtBottom",
     "HoboHumper",
     "Ballsac",
+    "Nimrod",
+    "LimpDick",
 ];
 
 //weapons
@@ -381,6 +386,8 @@ var weapons = [
     "saw",
     "launcher",
     "spell book",
+    "paperclip",
+    "gauntlet",
 ];
 
 var locationsAndPlurals = [
@@ -388,7 +395,6 @@ var locationsAndPlurals = [
     "Alabama",
     "Ugly people",
     "rodents",
-    "Russia",
     "the World",
     "The Universe",
     "Helicopters",
@@ -402,8 +408,8 @@ var locationsAndPlurals = [
     "fat people",
     "feminists",
     "stupid people",
-    "gays",
-    "straights",
+    "gay people",
+    "straight people",
     "Viltrum",
     "Krypton",
     "Mars",
@@ -433,6 +439,21 @@ var locationsAndPlurals = [
     "gingers",
     "short people",
     "children",
+    "space",
+    "The Empire State Building",
+    "China",
+    "Russia",
+    "Disney Land",
+    "The 4th Dimension",
+    "other dimensions",
+    "aliens",
+    "cats",
+    "ducks",
+    "the moon",
+    "single moms",
+    "autistic people",
+    "autistic children",
+    "wrestlers",
 ];
 
 var abilities = [
@@ -491,7 +512,6 @@ var abilities = [
     "destruction",
     "speed",
     "jump",
-    "jumping",
     "killing",
     "reversing",
     "dancing",
@@ -508,6 +528,9 @@ var abilities = [
     "levitation",
     "shout",
     "manipulation",
+    "invisibility",
+    "teleportation",
+    "force fields",
 ];
 
 
@@ -995,3 +1018,4 @@ function saveCharacter() {
 function getImage () {
     generatePDF();
 }
+
