@@ -323,6 +323,7 @@ var lastNames = [
     "Ballsac",
     "Nimrod",
     "LimpDick",
+    "Griffin",
 ];
 
 //weapons
