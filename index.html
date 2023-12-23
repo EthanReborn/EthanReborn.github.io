@@ -1,42 +1,78 @@
-<!DOCTYPE html>
-
-<html lang="en">
-        <head>
-                <meta charset="utf-8"/>
-                <title> Gold </title>
-		{% load static %}
-		<link rel="stylesheet" type="text/css" href="{% static 'gold/style.css' %}"/>
-        </head>
-
-<body id='body' class="black">
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-
-<script type="text/javascript">
-  function generatePDF() {
-
-        // Choose the element id which you want to export.
-        var element = document.getElementById('main');
-        element.style.width = '1000px';
-        element.style.height = '2050px';
-        // element.style.opacity = "0.1";
-        var opt = {
-            margin:       0.5,
-            filename:     'character.pdf',
-            image:        { type: 'jpg', quality: 0.5 },
-            html2canvas:  { scale: 1 },
-            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait',precision: '12' }
-          };
-
-        // choose the element and pass it to html2pdf() function and call the save() on it to save as pdf.
-        html2pdf().set(opt).from(element).save();
-      }
-</script>
-
-
-<script src="{% static 'gold/script.js' %}" type="text/javascript"></script>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Gold</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #e1b358; background-color: #202020}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #e1b358; background-color: #202020; min-height: 16.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #95b84f; background-color: #202020}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #febb5b; background-color: #202020}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #99a8ba; background-color: #202020; min-height: 16.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #6d6d6d; background-color: #202020}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #85609a; background-color: #202020}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #99a8ba; background-color: #202020}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #587647; background-color: #202020}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #bf6426; background-color: #202020; min-height: 16.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #bf6426; background-color: #202020}
+    span.s1 {color: #acacac}
+    span.s2 {color: #95b84f}
+    span.s3 {color: #99a8ba}
+    span.s4 {color: #e1b358}
+    span.s5 {color: #bf6426}
+    span.s6 {color: #6d6d6d}
+    span.s7 {color: #85609a}
+    span.s8 {color: #587647}
+    span.s9 {color: #5684ad}
+    span.s10 {color: #febb5b}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE <span class="s1">html</span>&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html <span class="s1">lang</span><span class="s2">="en"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;meta <span class="s1">charset</span><span class="s2">="utf-8"</span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;title&gt; <span class="s3">Gold </span>&lt;/title&gt;</p>
+<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p3"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">&lt;link </span><span class="s1">rel</span>="stylesheet" <span class="s1">type</span>="text/css" <span class="s1">href</span>="style.css"<span class="s4">/&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s4">&lt;body </span><span class="s1">id</span>='body' <span class="s1">class</span>="black"<span class="s4">&gt;</span></p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s4">&lt;script </span><span class="s1">src</span>="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"<span class="s4">&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s4">&lt;script </span><span class="s1">src</span>="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"<span class="s4">&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s4">&lt;script </span><span class="s1">src</span>="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"<span class="s4">&gt;&lt;/script&gt;</span></p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s4">&lt;script </span><span class="s1">type</span>="text/javascript"<span class="s4">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s5">function </span>generatePDF<span class="s3">() {</span></p>
+<p class="p5"><br></p>
+<p class="p6"><span class="s3"><span class="Apple-converted-space">        </span></span>// Choose the element id which you want to export.</p>
+<p class="p4"><span class="s6"><span class="Apple-converted-space">        </span></span><span class="s5">var </span><span class="s3">element = </span><span class="s7"><b><i>document</i></b></span><span class="s3">.</span>getElementById<span class="s3">(</span><span class="s8">'main'</span><span class="s3">)</span><span class="s5">;</span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">element.</span>style<span class="s3">.</span>width <span class="s3">= </span><span class="s8">'1000px'</span><span class="s5">;</span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">element.</span>style<span class="s3">.</span>height <span class="s3">= </span><span class="s8">'2050px'</span><span class="s5">;</span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span>// element.style.opacity = "0.1";</p>
+<p class="p6"><span class="Apple-converted-space">        </span><span class="s5">var </span><span class="s3">opt = {</span></p>
+<p class="p8"><span class="Apple-converted-space">            </span><span class="s7">margin</span>: <span class="Apple-converted-space">      </span><span class="s9">0.5</span><span class="s5">,</span></p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s7">filename</span><span class="s3">: <span class="Apple-converted-space">    </span></span>'character.pdf'<span class="s5">,</span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span>image<span class="s3">:<span class="Apple-converted-space">        </span>{ </span>type<span class="s3">: </span><span class="s8">'jpg'</span><span class="s5">, </span>quality<span class="s3">: </span><span class="s9">0.5 </span><span class="s3">}</span><span class="s5">,</span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span>html2canvas<span class="s3">:<span class="Apple-converted-space">  </span>{ </span>scale<span class="s3">: </span><span class="s9">1 </span><span class="s3">}</span><span class="s5">,</span></p>
+<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span>jsPDF<span class="s3">:<span class="Apple-converted-space">        </span>{ </span>unit<span class="s3">: </span><span class="s8">'in'</span><span class="s5">, </span>format<span class="s3">: </span><span class="s8">'letter'</span><span class="s5">, </span>orientation<span class="s3">: </span><span class="s8">'portrait'</span><span class="s5">,</span>precision<span class="s3">: </span><span class="s8">'12' </span><span class="s3">}</span></p>
+<p class="p8"><span class="Apple-converted-space">          </span>}<span class="s5">;</span></p>
+<p class="p10"><br></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span>// choose the element and pass it to html2pdf() function and call the save() on it to save as pdf.</p>
+<p class="p8"><span class="s6"><span class="Apple-converted-space">        </span></span>html2pdf().<span class="s10">set</span>(opt).<span class="s10">from</span>(element).<span class="s10">save</span>()<span class="s5">;</span></p>
+<p class="p11"><span class="Apple-converted-space">      </span><span class="s3">}</span></p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3"><span class="s4">&lt;script </span><span class="s1">src</span>="script.js" <span class="s1">type</span>="text/javascript"<span class="s4">&gt;&lt;/script&gt;</span></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
