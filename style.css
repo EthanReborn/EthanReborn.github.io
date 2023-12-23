@@ -1,6 +1,6 @@
 html,
 body {
-  height: 220%;
+  height: 170%;
   margin: 0;
   padding: 0;
 }
@@ -159,7 +159,7 @@ title {
 	text-transform: capitalize;
 	/*text-align: right;*/
 	margin: auto;
-	width: 60%;
+	width: 90%;
 	/*justify-content: center;*/
 	justify-content: space-between;
 	padding: 3px 10px;
