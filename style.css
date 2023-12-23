@@ -13,7 +13,7 @@ div {
 }
 
 h2 {
-	font-size: 60%;
+	font-size: 180%;
 	font-family: Luminari, fantasy;
 	font-weight: 900;
 	text-shadow: -0.5px -0.5px 0 rgba(212, 22, 22, 0.76), 0.5px -0.5px 0 rgba(212, 22, 22, 0.76), -0.5px 0.5px 0 rgba(212, 22, 22, 0.76), 0.5px 0.5px 0 rgba(212, 22, 22, 0.76);
@@ -118,7 +118,7 @@ title {
 }
 
 .text {
-	font-size: 30px;
+	font-size: 180%;
 	font-family: Baskerville, sans-serif;
 	font-weight: 700;
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
@@ -139,14 +139,14 @@ title {
 }
 
 .non-hover-text {
-	font-size: 30px;
+	font-size: 180%;
 	font-family: Baskerville, sans-serif;
 	font-weight: 700;
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
 }
 
  .small-text {
-	font-size: 20px;
+	font-size: 120%;
 	font-family: Baskerville, sans-serif;
 	font-weight: 700;
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
