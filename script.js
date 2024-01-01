@@ -1660,24 +1660,24 @@ function resetPage() {
     nextDivs.push(noun3);
 
 
-    nextDivs.push(answer4);
+    // nextDivs.push(answer4);
 
 
-    name3.textContent = "";
-    name3.onclick = function () {
-        toggleSelected1();
-    }
-    name3.style.display = "inline";
-    name3.className = "text";
-    nextDivs.push(name3);
+    // name3.textContent = "";
+    // name3.onclick = function () {
+    //     toggleSelected1();
+    // }
+    // name3.style.display = "inline";
+    // name3.className = "text";
+    // nextDivs.push(name3);
 
-    name4.textContent = "";
-    name4.onclick = function () {
-        toggleSelected2();
-    }
-    name4.style.display = "inline";
-    name4.className = "text";
-    nextDivs.push(name4);
+    // name4.textContent = "";
+    // name4.onclick = function () {
+    //     toggleSelected2();
+    // }
+    // name4.style.display = "inline";
+    // name4.className = "text";
+    // nextDivs.push(name4);
 
 
     nextDivs.push(answer5);
