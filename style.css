@@ -140,6 +140,7 @@ title {
 }
 
 .non-hover-text {
+	color: black;
 	width: 70%;
 	text-transform: capitalize;
 	text-align: center;
