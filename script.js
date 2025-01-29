@@ -427,6 +427,8 @@ var adjectives = [
     "tinfoil",
     "fruity",
     "naked",
+    "animatronic",
+    "animalistic",
 ];
 
 //verbs
