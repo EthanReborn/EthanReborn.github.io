@@ -362,7 +362,7 @@ var adjectives = [
     "affectionate",
     "gorgeous",
     "glistening",
-    "grousome",
+    "gruesome",
     "godly",
     "godlike",
     "generous",
@@ -429,6 +429,21 @@ var adjectives = [
     "naked",
     "animatronic",
     "animalistic",
+    "decaying",
+    "vampiric",
+    "shadow",
+    "alien",
+    "chocolate",
+    "wealthy",
+    "billionaire",
+    "millionare",
+    "were",
+    "broke",
+    "poor",
+    "strong",
+    "cotton",
+    "carbon",
+    "lying",
 ];
 
 //verbs
@@ -542,6 +557,12 @@ var verbs = [
     "corrupt",
     "seduce",
     "starve",
+    "get dominated by",
+    "serve",
+    "throw up",
+    "get jiggy with",
+    "be creepy in",
+    "dance in",
 ];
 
 //firstnames
@@ -923,6 +944,15 @@ var locationsAndPlurals = [
     "trees",
     "musicians",
     "transformers",
+    "zombies",
+    "criminals",
+    "vampires",
+    "werewolves",
+    "lawyers",
+    "politicians",
+    "salesmen",
+    "influencers",
+    "youtubers",
 ];
 
 var abilities = [
@@ -1021,7 +1051,6 @@ var abilities = [
     "electricity",
     "chemistry",
     "chemicals",
-    "glue gun",
     "hands",
     "thumb",
     "bending",
