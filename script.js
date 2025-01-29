@@ -1,4 +1,3 @@
-
 //nouns
 var nouns = [
     "snake",
@@ -172,6 +171,8 @@ var nouns = [
     "figher pilot",
     "transformer",
     "lover",
+    "Optimus Prime",
+    "Batman",
 ];
 
 //adjectives
@@ -332,7 +333,7 @@ var adjectives = [
     "deluxe",
     "blazing",
     "comedic",
-    "unfunny"
+    "unfunny",
     "clever",
     "cunning",
     "crafty",
@@ -414,6 +415,18 @@ var adjectives = [
     "gay",
     "straight",
     "mental",
+    "shattered",
+    "supersonic",
+    "slippery",
+    "force",
+    "gravity",
+    "granite",
+    "rock",
+    "dirt",
+    "dirty",
+    "tinfoil",
+    "fruity",
+    "naked",
 ];
 
 //verbs
@@ -499,7 +512,7 @@ var verbs = [
     "hose-down",
     "mail",
     "ship",
-    "knock out"
+    "knock out",
     "work for",
     "ride",
     "slap",
@@ -518,6 +531,15 @@ var verbs = [
     "liquify",
     "vacuum",
     "disinfect",
+    "elect",
+    "manipulate",
+    "inprison",
+    "jail",
+    "arrest",
+    "capture",
+    "corrupt",
+    "seduce",
+    "starve",
 ];
 
 //firstnames
@@ -892,6 +914,13 @@ var locationsAndPlurals = [
     "the marines",
     "the death star",
     "the white house",
+    "video games",
+    "time machines",
+    "accountants",
+    "wall street",
+    "trees",
+    "musicians",
+    "transformers",
 ];
 
 var abilities = [
@@ -996,7 +1025,17 @@ var abilities = [
     "bending",
     "levitating",
     "spinning",
-    
+    "projection",
+    "lifting",
+    "throwing",
+    "backflip",
+    "stabbing",
+    "gravity",
+    "magnetism",
+    "transforming",
+    "speaking",
+    "magic",
+    "black magic",
 ];
 
 var vehicles = [
@@ -1045,6 +1084,8 @@ var vehicles = [
     "pirate ship",
     "slip n' slide",
     "row boat",
+    "ostrich",
+    "t-rex",
 ]
 
 document.title = "destiny's handbook 2"
@@ -2016,4 +2057,3 @@ function resetPage() {
     generateNames2(nouns, 'noun1');
 
 }
-
