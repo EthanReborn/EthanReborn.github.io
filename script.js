@@ -223,6 +223,7 @@ var nouns = [
     "Gordan Ramsay",
     "Nosferatu",
     "vlogger",
+    "sith lord",
 ];
 
 //adjectives
