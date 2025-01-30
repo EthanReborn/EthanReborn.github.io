@@ -3133,31 +3133,32 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 
 function showScoreChange(amount) {
     let scoreBox = document.getElementById('score');
-    if (!scoreBox) return; // If scoreBox is not found, exit the function
+    if (!scoreBox) {
+        console.error("scoreBox not found!");
+        return;
+    }
 
-    // Create a span for the score change
+    // Create the span
     const scoreChange = document.createElement('span');
-    scoreChange.classList.add('text');
-
-    // Set the content for the score change, including sign (+/-)
-    scoreChange.textContent = `${amount > 0 ? '+' : '-'}${amount}`;
+    scoreChange.classList.add('fade-number');
+    scoreChange.textContent = `${amount > 0 ? '+' : ''}${amount}`;
     scoreChange.style.color = amount > 0 ? 'green' : 'red';
 
-    // Append the newly created score change span
-    console.log(scoreChange)
+    // Log the span before appending
+    console.log("Creating and appending span:", scoreChange);
+
+    // Append to body for testing
+    document.body.appendChild(scoreChange); // Temporarily append to body to check
+
+    // Append the span to the scoreBox
     scoreBox.appendChild(scoreChange);
 
-    // Trigger the fade-in and movement animation after a small delay to ensure it renders
-    setTimeout(() => {
-        scoreChange.classList.add('fade-in-out');
-    }, 10);
+    console.log("Score change appended to scoreBox:", scoreChange);
 
-    //Remove the span after the animation completes (after 1.1 seconds)
+    // Test with a timeout to ensure visibility
     setTimeout(() => {
-        if (scoreChange.parentNode === scoreBox) {
-            scoreBox.removeChild(scoreChange); // Check if it’s still a child of scoreBox
-        }
-    }, 1100); // Matches the animation duration
+        scoreChange.style.display = 'none'; // Hide after 2 seconds
+    }, 2000);
 }
 
 function toggleSelected1() {
