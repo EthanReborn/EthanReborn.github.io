@@ -2055,12 +2055,12 @@ function completedStep(div, list1, list2) {
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
 
-        main.removeChild(scoreBox);
+        main.removeChild(document.getElementById('score'));
         //alert('Child removed!');
      
         main.appendChild(container);
 
-        main.appendChild(scoreBox); 
+        main.appendChild(document.getElementById('score')); 
     }
 
     //reset flags to unselected 
