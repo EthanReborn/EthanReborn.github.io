@@ -167,6 +167,7 @@ title {
 }
 
 .score-box {
+	display: block;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding: 1px;
@@ -177,6 +178,7 @@ title {
 }
 
 .score-box-red {
+	display: block;
 	color: red;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -188,6 +190,7 @@ title {
 }
 
 .score-box-green {
+	display: block;
 	color: green; 
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -258,7 +261,7 @@ title {
 	font-size: 35px;
 }
 
- .small-text {
+.small-text {
 	font-size: 20px;
 	font-family: Baskerville, sans-serif;
 	font-weight: 700;
@@ -314,3 +317,19 @@ title {
 	text-shadow: -1px -1px 0 #16d4b1, 1px -1px 0 #16d4b1, -1px 1px 0 #16d4b1, 1px 1px 0 #16d4b1;
 }
 
+.fade-number {
+    position: absolute;
+    top: -30px; /* Adjust this value for the floating effect */
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+	display: inline-block;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    color: green; /* Default color, can change based on positive/negative value */
+}
+
+.fade-number.fade-in-out {
+    opacity: 1;
+	display: inline-block;
+    transform: translateY(-10px); /* Moves the number upward */
+}

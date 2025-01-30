@@ -2410,7 +2410,7 @@ var vehicles = [
     ["speeder", 1900],
     ["clown car", -800],
     ["scooter", 700],
-    ["tricycle", -300],
+    ["tricycle", -1000],
     ["motorcycle", 1600],
     ["boat", 1200],
     ["skiis", 1100],
@@ -3148,16 +3148,16 @@ function showScoreChange(amount) {
     scoreBox.appendChild(scoreChange);
 
     // Trigger the fade-in and movement animation after a small delay to ensure it renders
-    // setTimeout(() => {
-    //     scoreChange.classList.add('fade-in-out');
-    // }, 10);
+    setTimeout(() => {
+        scoreChange.classList.add('fade-in-out');
+    }, 10);
 
-    // Remove the span after the animation completes (after 1.1 seconds)
-    // setTimeout(() => {
-    //     if (scoreChange.parentNode === scoreBox) {
-    //         scoreBox.removeChild(scoreChange); // Check if it’s still a child of scoreBox
-    //     }
-    // }, 1100); // Matches the animation duration
+    //Remove the span after the animation completes (after 1.1 seconds)
+    setTimeout(() => {
+        if (scoreChange.parentNode === scoreBox) {
+            scoreBox.removeChild(scoreChange); // Check if it’s still a child of scoreBox
+        }
+    }, 1100); // Matches the animation duration
 }
 
 function toggleSelected1() {
@@ -3171,7 +3171,7 @@ function toggleSelected1() {
             wIndex += 2;
             console.log("left word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 750);
+        }, 7500);
     }
 }
 
@@ -3186,7 +3186,7 @@ function toggleSelected2() {
             wIndex += 2;
             console.log("right word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 750);
+        }, 7500);
     }
 }
 
