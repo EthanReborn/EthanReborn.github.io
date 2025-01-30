@@ -224,6 +224,12 @@ var nouns = [
     "Nosferatu",
     "vlogger",
     "sith lord",
+    "serpent",
+    "sugar daddy",
+    "roman",
+    "mexican",
+    "nascar driver",
+    "limo driver",
 ];
 
 //adjectives
@@ -533,6 +539,8 @@ var adjectives = [
     "tornado",
     "blood-sucking",
     "ancient",
+    "carbon-fiber",
+    "amazing",
 ];
 
 //verbs
@@ -710,184 +718,7 @@ var verbs = [
     "insult",
     "be mean to",
     "confess to",
-];
-
-//firstnames
-var firstNames = [
-    "Steve",
-    "Bob",
-    "Will",
-    "Mary-Sue",
-    "Philip",
-    "Peter",
-    "Lebron",
-    "Arnold",
-    "Donald",
-    "liu",
-    "Walter",
-    "Jesse",
-    "Santa",
-    "Boo-boo",
-    "Honey",
-    "Michael",
-    "Dingster",
-    "Wobby",
-    "Flapbag",
-    "Flapjack",
-    "Marco",
-    "Mario",
-    "Gobsmack",
-    "Nick",
-    "Ballsac",
-    "Lord",
-    "King",
-    "Cumquat",
-    "Dillsack",
-    "Margot",
-    "Dr.",
-    "Mr.",
-    "Joseph",
-    "Tony",
-    "GoatSucker",
-    "RatHumper",
-    "NipTwister",
-    "Coolio",
-    "Steve",
-    "Focker",
-    "James",
-    "Kent",
-    "Hooboo",
-    "Boo-boo",
-    "Robbie",
-    "Jackson",
-    "Jackoff",
-    "Wigglekins",
-    "Gillington",
-    "McGee",
-    "Retardo",
-    "ButtBottom",
-    "HoboHumper",
-    "Nimrod",
-    "LimpDick",
-    "beyonce",
-    "Booberton",
-    "Dick-wad",
-    "Dillweed",
-    "Dill-wad",
-    "Dicker",
-    "Jesus",
-    "Vladimir",
-    "Dingbat",
-    "Captain",
-    "Ted",
-    "Jezanthepuss",
-    "Willington",
-];
-
-var lastNames = [
-    "Parker",
-    "Bin-Laden",
-    "White",
-    "Mercury",
-    "Hitler",
-    "Stalin",
-    "Griffin",
-    "Simpson",
-    "Schwarzenegger",
-    "Cruise",
-    "Stark",
-    "Kenobi",
-    "Skywalker",
-    "Travolta",
-    "Arthur",
-    "Vader",
-    "Obama",
-    "Bush",
-    "Clinton",
-    "Reagan",
-    "Washington",
-    "Lincoln",
-    "Smith",
-    "Banner",
-    "Musk",
-    "Hawking",
-    "Hemsworth",
-    "Dafoe",
-    "Bieber",
-    "Christ",
-    "Clause",
-    "James",
-    "Jordan",
-    "Jackson",
-    "Goodman",
-    "Trump",
-    "Cage",
-    "Putin",
-    "Dracula",
-    "Hogan",
-    "Rock",
-    "Edison",
-    "Tesla",
-    "Wayne",
-    "Manson",
-    "Lennon",
-    "Winfrey",
-    "BooBoo",
-    "America",
-    "Bundy",
-];
-
-var fullNames = [
-    "Peter Parker",
-    "Osama Bin-Laden",
-    "Walter White",
-    "Freddie Mercury",
-    "Adolf Hitler",
-    "Joseph Stalin",
-    "Peter Griffin",
-    "Homer Simpson",
-    "Arnold Schwarzenegger",
-    "Tom Cruise",
-    "Tony Stark",
-    "Obi-Wan Kenobi",
-    "Luke Skywalker",
-    "John Travolta",
-    "King Arthur",
-    "Darth Vader",
-    "Barack Obama",
-    "George Bush",
-    "Bill Clinton",
-    "Ronald Reagan",
-    "George Washington",
-    "Abraham Lincoln",
-    "Will Smith",
-    "Bruce Banner",
-    "Elon Musk",
-    "Stephen Hawking",
-    "Chris Hemsworth",
-    "Willem Dafoe",
-    "Justin Bieber",
-    "Jesus Christ",
-    "Santa Clause",
-    "Lebron James",
-    "Michael Jordan",
-    "Michael Jackson",
-    "Saul Goodman",
-    "Donald Trump",
-    "Nicolas Cage",
-    "Vladimir Putin",
-    "Count Dracula",
-    "Hulk Hogan",
-    "The Rock",
-    "Thomas Edison",
-    "Nicola Tesla",
-    "John Wayne",
-    "Charles Manson",
-    "John Lennon",
-    "Oprah Winfrey",
-    "Honey BooBoo",
-    "Captain America",
-    "Ted Bundy",
+    "declare war on",
 ];
 
 //weapons
@@ -994,6 +825,7 @@ var weapons = [
     "javelin",
 ];
 
+//locationsAndPlurals
 var locationsAndPlurals = [
     "Atlantis",
     "Alabama",
@@ -1185,6 +1017,7 @@ var locationsAndPlurals = [
     "empires",
 ];
 
+//abilities
 var abilities = [
     "beauty",
     "bravery",
@@ -1324,6 +1157,7 @@ var abilities = [
     "tornado",
 ];
 
+//vehicles
 var vehicles = [
     "car",
     "bus",
@@ -1378,7 +1212,187 @@ var vehicles = [
     "tesla",
     "moped",
     "four-wheeler",
-]
+];
+
+//firstnames
+var firstNames = [
+    "Steve",
+    "Bob",
+    "Will",
+    "Mary-Sue",
+    "Philip",
+    "Peter",
+    "Lebron",
+    "Arnold",
+    "Donald",
+    "liu",
+    "Walter",
+    "Jesse",
+    "Santa",
+    "Boo-boo",
+    "Honey",
+    "Michael",
+    "Dingster",
+    "Wobby",
+    "Flapbag",
+    "Flapjack",
+    "Marco",
+    "Mario",
+    "Gobsmack",
+    "Nick",
+    "Ballsac",
+    "Lord",
+    "King",
+    "Cumquat",
+    "Dillsack",
+    "Margot",
+    "Dr.",
+    "Mr.",
+    "Joseph",
+    "Tony",
+    "GoatSucker",
+    "RatHumper",
+    "NipTwister",
+    "Coolio",
+    "Steve",
+    "Focker",
+    "James",
+    "Kent",
+    "Hooboo",
+    "Boo-boo",
+    "Robbie",
+    "Jackson",
+    "Jackoff",
+    "Wigglekins",
+    "Gillington",
+    "McGee",
+    "Retardo",
+    "ButtBottom",
+    "HoboHumper",
+    "Nimrod",
+    "LimpDick",
+    "beyonce",
+    "Booberton",
+    "Dick-wad",
+    "Dillweed",
+    "Dill-wad",
+    "Dicker",
+    "Jesus",
+    "Vladimir",
+    "Dingbat",
+    "Captain",
+    "Ted",
+    "Jezanthepuss",
+    "Willington",
+];
+
+var lastNames = [
+    "Parker",
+    "Bin-Laden",
+    "White",
+    "Mercury",
+    "Hitler",
+    "Stalin",
+    "Griffin",
+    "Simpson",
+    "Schwarzenegger",
+    "Cruise",
+    "Stark",
+    "Kenobi",
+    "Skywalker",
+    "Travolta",
+    "Arthur",
+    "Vader",
+    "Obama",
+    "Bush",
+    "Clinton",
+    "Reagan",
+    "Washington",
+    "Lincoln",
+    "Smith",
+    "Banner",
+    "Musk",
+    "Hawking",
+    "Hemsworth",
+    "Dafoe",
+    "Bieber",
+    "Christ",
+    "Clause",
+    "James",
+    "Jordan",
+    "Jackson",
+    "Goodman",
+    "Trump",
+    "Cage",
+    "Putin",
+    "Dracula",
+    "Hogan",
+    "Rock",
+    "Edison",
+    "Tesla",
+    "Wayne",
+    "Manson",
+    "Lennon",
+    "Winfrey",
+    "BooBoo",
+    "America",
+    "Bundy",
+];
+
+var fullNames = [
+    "Peter Parker",
+    "Osama Bin-Laden",
+    "Walter White",
+    "Freddie Mercury",
+    "Adolf Hitler",
+    "Joseph Stalin",
+    "Peter Griffin",
+    "Homer Simpson",
+    "Arnold Schwarzenegger",
+    "Tom Cruise",
+    "Tony Stark",
+    "Obi-Wan Kenobi",
+    "Luke Skywalker",
+    "John Travolta",
+    "King Arthur",
+    "Darth Vader",
+    "Barack Obama",
+    "George Bush",
+    "Bill Clinton",
+    "Ronald Reagan",
+    "George Washington",
+    "Abraham Lincoln",
+    "Will Smith",
+    "Bruce Banner",
+    "Elon Musk",
+    "Stephen Hawking",
+    "Chris Hemsworth",
+    "Willem Dafoe",
+    "Justin Bieber",
+    "Jesus Christ",
+    "Santa Clause",
+    "Lebron James",
+    "Michael Jordan",
+    "Michael Jackson",
+    "Saul Goodman",
+    "Donald Trump",
+    "Nicolas Cage",
+    "Vladimir Putin",
+    "Count Dracula",
+    "Hulk Hogan",
+    "The Rock",
+    "Thomas Edison",
+    "Nicola Tesla",
+    "John Wayne",
+    "Charles Manson",
+    "John Lennon",
+    "Oprah Winfrey",
+    "Honey BooBoo",
+    "Captain America",
+    "Ted Bundy",
+];
+
+var score = 0; 
 
 document.title = "destiny's handbook 2"
 
@@ -1406,10 +1420,6 @@ wordLists.push(locationsAndPlurals);
 // wordLists.push(firstNames);
 // wordLists.push(lastNames);
 
-//your vehicle
-wordLists.push(adjectives);
-wordLists.push(vehicles);
-
 //your weapon
 wordLists.push(adjectives);
 wordLists.push(weapons);
@@ -1424,12 +1434,15 @@ wordLists.push(abilities);
 wordLists.push(adjectives);
 wordLists.push(nouns);
 
+//your vehicle
+wordLists.push(adjectives);
+wordLists.push(vehicles);
+
 //your weakness
 var combined2 = nouns.concat(weapons);
 shuffleArray(combined2);
 wordLists.push(locationsAndPlurals);
 wordLists.push(combined2);
-
 
 
 
@@ -1448,7 +1461,7 @@ manual.textContent = "click on changing words to select";
 manual.setAttribute('class', 'small-text');
 
 
-//user selection sub-sections
+//YOU ARE A
 var answer1 = document.createElement('h2');
 answer1.textContent = "You Are a: "
 nextDivs.push(answer1);
@@ -1479,6 +1492,7 @@ firstContainer.appendChild(adj1);
 firstContainer.appendChild(noun1);
 
 
+//THE
 var answer2 = document.createElement('h2');
 answer2.textContent = "The: "
 nextDivs.push(answer2);
@@ -1504,6 +1518,7 @@ noun2.className = "text";
 nextDivs.push(noun2);
 
 
+//DESTINED TO
 var answer3 = document.createElement('h2');
 answer3.textContent = "Destined to: "
 nextDivs.push(answer3);
@@ -1554,31 +1569,6 @@ nextDivs.push(noun3);
 // nextDivs.push(name4);
 
 
-var answer5 = document.createElement('h2');
-answer5.textContent = "Your vehicle: "
-nextDivs.push(answer5);
-
-var adj7 = document.createElement('button');
-adj7.textContent = "";
-adj7.setAttribute('id', 'adj7');
-adj7.setAttribute('class', 'clear-1-column');
-adj7.onclick = function () {
-    toggleSelected1();
-}
-adj7.style.display = "inline";
-adj7.className = "text";
-nextDivs.push(adj7);
-
-var vehicle1 = document.createElement('button');
-vehicle1.textContent = "";
-vehicle1.setAttribute('id', 'vehicle1');
-vehicle1.onclick = function () {
-    toggleSelected2();
-}
-vehicle1.style.display = "inline";
-vehicle1.className = "text";
-nextDivs.push(vehicle1);
-
 
 var answer6 = document.createElement('h2');
 answer6.textContent = "Your weapon: "
@@ -1605,6 +1595,7 @@ weapon1.className = "text";
 nextDivs.push(weapon1);
 
 
+//SPECIAL ABILITY
 var answer7 = document.createElement('h2');
 answer7.textContent = "Special Ability: "
 nextDivs.push(answer7);
@@ -1630,6 +1621,7 @@ ability1.className = "text";
 nextDivs.push(ability1);
 
 
+//YOUR COMPANION
 var answer8 = document.createElement('h2');
 answer8.textContent = "Your companion: "
 nextDivs.push(answer8);
@@ -1655,6 +1647,34 @@ noun4.className = "text";
 nextDivs.push(noun4);
 
 
+//YOUR VEHICLE
+var answer5 = document.createElement('h2');
+answer5.textContent = "Your vehicle: "
+nextDivs.push(answer5);
+
+var adj7 = document.createElement('button');
+adj7.textContent = "";
+adj7.setAttribute('id', 'adj7');
+adj7.setAttribute('class', 'clear-1-column');
+adj7.onclick = function () {
+    toggleSelected1();
+}
+adj7.style.display = "inline";
+adj7.className = "text";
+nextDivs.push(adj7);
+
+var vehicle1 = document.createElement('button');
+vehicle1.textContent = "";
+vehicle1.setAttribute('id', 'vehicle1');
+vehicle1.onclick = function () {
+    toggleSelected2();
+}
+vehicle1.style.display = "inline";
+vehicle1.className = "text";
+nextDivs.push(vehicle1);
+
+
+//YOUR WEAKNESS
 var answer9 = document.createElement('h2');
 answer9.textContent = "Your weakness: "
 nextDivs.push(answer9);
@@ -1679,6 +1699,8 @@ noun5.style.display = "center";
 noun5.className = "text";
 nextDivs.push(noun5);
 
+
+
 var space1 = document.createElement('span');
 space1.textContent = "\t \t \t";
 
@@ -1694,93 +1716,96 @@ div.appendChild(answer1);
 div.appendChild(firstContainer);
 
 //start random wheel for first question
-generateNames1(adjectives, 'adj1');
-generateNames2(nouns, 'noun1');
+leftWordLooper(adjectives, 'adj1');
+rightWordLooper(nouns, 'noun1');
 
 
-function click() {
+// function click() {
 
-    var amount = num1.value;
-    var unit = op.value;
-    console.log(amount);
-    var expression = document.createElement('p');
-    var name = op.label;
-    console.log(name);
+//     var amount = num1.value;
+//     var unit = op.value;
+//     console.log(amount);
+//     var expression = document.createElement('p');
+//     var name = op.label;
+//     console.log(name);
 
-    document.getElementById('loading').textContent = "please wait ...";
+//     document.getElementById('loading').textContent = "please wait ...";
 
-    var unitUrl = `http://localhost:8000/unitconv/convert?from=${unit}&to=t_oz&value=${amount}`;
+//     var unitUrl = `http://localhost:8000/unitconv/convert?from=${unit}&to=t_oz&value=${amount}`;
 
-    if(num1.value.length == 0){
-        expression.setAttribute('class', 'red');
-        expression.textContent = new Date().toLocaleString() + " Error: Missing Input";
-        document.getElementById('loading').textContent += " Done";
-        rsTable.prepend(expression);
-        expression.onclick = function(){rsTable.removeChild(expression)};
-        return;
-    }
-    fetch(unitUrl)
-        .then( response => response.json() )
-        .then( json => {
-            // troyOzNum = json['value'];
-            console.log(troyOzNum);
-            console.log(json);
-        })
-        .catch( err => {
-            let message = `Request to ${unitUrl} did not work`;
-            document.getElementById('loading').textContent += " Request to 'localhost:8000/unitconv failed' ...";
-            // troyOzNum = NaN;
-            console.log(message);
-        })
-        .finally(() => {
-            if(!Number.isNaN(troyOzNum)){
-                document.getElementById('loading').textContent += "  All done!";
-                expression.setAttribute('class', 'stuff-box');
-                expression.textContent = new Date().toLocaleString() + " Your worth in GOLD is: " + Number(troyOzNum * curPrice).toFixed(3);
-                expression.onclick = function(){rsTable.removeChild(expression)};
-                rsTable.prepend(expression);
-            }
-        })
-}
+//     if(num1.value.length == 0){
+//         expression.setAttribute('class', 'red');
+//         expression.textContent = new Date().toLocaleString() + " Error: Missing Input";
+//         document.getElementById('loading').textContent += " Done";
+//         rsTable.prepend(expression);
+//         expression.onclick = function(){rsTable.removeChild(expression)};
+//         return;
+//     }
+//     fetch(unitUrl)
+//         .then( response => response.json() )
+//         .then( json => {
+//             // troyOzNum = json['value'];
+//             console.log(troyOzNum);
+//             console.log(json);
+//         })
+//         .catch( err => {
+//             let message = `Request to ${unitUrl} did not work`;
+//             document.getElementById('loading').textContent += " Request to 'localhost:8000/unitconv failed' ...";
+//             // troyOzNum = NaN;
+//             console.log(message);
+//         })
+//         .finally(() => {
+//             if(!Number.isNaN(troyOzNum)){
+//                 document.getElementById('loading').textContent += "  All done!";
+//                 expression.setAttribute('class', 'stuff-box');
+//                 expression.textContent = new Date().toLocaleString() + " Your worth in GOLD is: " + Number(troyOzNum * curPrice).toFixed(3);
+//                 expression.onclick = function(){rsTable.removeChild(expression)};
+//                 rsTable.prepend(expression);
+//             }
+//         })
+// }
 
-function computeNum() {
+// function computeNum() {
 
-    document.getElementById('loading').textContent = "fetching current price of gold ... ";
+//     document.getElementById('loading').textContent = "fetching current price of gold ... ";
 
-    var goldUrl = "https://data.nasdaq.com/api/v3/datasets/LBMA/GOLD.json?api_key=tmkky34G3yr4zpS-wAdJ&column_index=1&limit=1";
+//     var goldUrl = "https://data.nasdaq.com/api/v3/datasets/LBMA/GOLD.json?api_key=tmkky34G3yr4zpS-wAdJ&column_index=1&limit=1";
 
-    fetch(goldUrl)
-        .then( response => response.json() )
-        .then( json => {
-            theData = json;
-            curPrice = theData.dataset.data[0][1];
-            console.log(curPrice);
-        })
-        .catch( err => {
-            let message = `Request to ${goldUrl} did not work`;
-            document.getElementById('loading').textContent += " Request to data.nasdaq.com failed ... ";
-            console.log(err);
-            return;
-        })
-        .finally(() => {
-            if (curPrice){
-                document.getElementById('loading').textContent = "";
-                document.getElementById('listPrice').textContent = "The Price of Gold as of " + new Date().toLocaleString() + " is $" + curPrice + " per Troy Ounce.";
-            }
-        })
-}
+//     fetch(goldUrl)
+//         .then( response => response.json() )
+//         .then( json => {
+//             theData = json;
+//             curPrice = theData.dataset.data[0][1];
+//             console.log(curPrice);
+//         })
+//         .catch( err => {
+//             let message = `Request to ${goldUrl} did not work`;
+//             document.getElementById('loading').textContent += " Request to data.nasdaq.com failed ... ";
+//             console.log(err);
+//             return;
+//         })
+//         .finally(() => {
+//             if (curPrice){
+//                 document.getElementById('loading').textContent = "";
+//                 document.getElementById('listPrice').textContent = "The Price of Gold as of " + new Date().toLocaleString() + " is $" + curPrice + " per Troy Ounce.";
+//             }
+//         })
+// }
 
 
-function generateNames1(inputList, tagName) {
+function leftWordLooper(inputList, tagName) {
     let index = 0
     let list = inputList;
+
     function displayNextName() {
         document.getElementById(tagName).textContent = list[index];
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
 
+        //if not selected keep looping
         if (!selected1) {
-            setTimeout(displayNextName, 30); //displayNextName calls itself again in 1/10 of a second
+            setTimeout(displayNextName, 30); //displayNextName calls itself again in 30ms
         }
+        //remove onclick function and turn off color change on hover 
         else{
             nextDivs[nextIndex + 1].onclick = function () { };
             nextDivs[nextIndex + 1].setAttribute('class', 'non-hover-text');
@@ -1791,7 +1816,7 @@ function generateNames1(inputList, tagName) {
     displayNextName();
 }
 
-function generateNames2(inputList, tagName) {
+function rightWordLooper(inputList, tagName) {
     let index = 0
     let list = inputList;
 
@@ -1799,12 +1824,13 @@ function generateNames2(inputList, tagName) {
         nextIndex += 3;
         return;
     }
+
     function displayNextName() {
         document.getElementById(tagName).textContent = list[index];
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
 
         if (!selected2) {
-            setTimeout(displayNextName, 30); //displayNextName calls itself again in 1/10 of a second
+            setTimeout(displayNextName, 30); //displayNextName calls itself again in 30ms
         }
         else{
             nextDivs[nextIndex + 2].onclick = function () { };
@@ -1817,28 +1843,28 @@ function generateNames2(inputList, tagName) {
 }
 
 function toggleSelected1() {
-    console.log("toggle1 selected")
+    console.log("left toggle selected")
     selected1 = !selected1;
 
     if(selected1 && selected2){
         setTimeout( () => {
             nextIndex += 3;
             wIndex += 2;
-            console.log("index1 updated")
+            console.log("left word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 100);
     }
 }
 
 function toggleSelected2() {
-    console.log("toggle2 selected")
+    console.log("right toggle selected")
     selected2 = !selected2;
 
     if(selected1 && selected2) {
          setTimeout( () => {
             nextIndex += 3;
             wIndex += 2;
-            console.log("index2 updated")
+            console.log("right word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 100);
     }
@@ -1846,7 +1872,7 @@ function toggleSelected2() {
 
 function completedStep(div, list1, list2) {
 
-    //end of game cleanup
+    //if end of game, end of game cleanup
     if(nextIndex >= nextDivs.length || wIndex >= wordLists.length){
         console.log('create button');
 
@@ -2012,6 +2038,7 @@ function completedStep(div, list1, list2) {
         document.getElementById('main').appendChild(container);
     }
 
+    //reset flags to unselected 
     setTimeout(() => {
         selected1 = !selected1;
         selected2 = !selected2;
@@ -2020,9 +2047,8 @@ function completedStep(div, list1, list2) {
     document.getElementById('adj1').setAttribute('class', 'non-hover-text');
     document.getElementById('noun1').setAttribute('class', 'non-hover-text');
 
-    setTimeout(() => generateNames1(list1, nextDivs[nextIndex + 1].id), 100);
-    setTimeout(() => generateNames2(list2, nextDivs[nextIndex + 2].id), 200);
-
+    setTimeout(() => leftWordLooper(list1, nextDivs[nextIndex + 1].id), 100);
+    setTimeout(() => rightWordLooper(list2, nextDivs[nextIndex + 2].id), 200);
 }
 
 function shuffleArray(array) {
@@ -2038,9 +2064,9 @@ function shuffleAll() {
     shuffleArray(nouns);
     shuffleArray(adjectives);
     shuffleArray(verbs);
-    shuffleArray(firstNames);
-    shuffleArray(lastNames);
-    shuffleArray(fullNames);
+    // shuffleArray(firstNames);
+    // shuffleArray(lastNames);
+    // shuffleArray(fullNames);
     shuffleArray(abilities);
     shuffleArray(weapons);
     shuffleArray(locationsAndPlurals);
@@ -2345,7 +2371,7 @@ function resetPage() {
     div.appendChild(firstContainer);
 
     //start random wheel for first question
-    generateNames1(adjectives, 'adj1');
-    generateNames2(nouns, 'noun1');
+    leftWordLooper(adjectives, 'adj1');
+    rightWordLooper(nouns, 'noun1');
 
 }
