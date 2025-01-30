@@ -1729,7 +1729,7 @@ div.appendChild(title);
 div.appendChild(manual);
 div.appendChild(youAreDiv);
 div.appendChild(firstContainer);
-//div.appendChild(scoreBox);
+div.appendChild(scoreBox);
 
 //start random wheel for first question
 leftWordLooper(adjectives, 'adj1');
