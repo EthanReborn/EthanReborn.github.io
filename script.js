@@ -3049,7 +3049,6 @@ function leftWordLooper(inputList, tagName) {
             
             //update score 
             let wordValue = list[index][1];
-            console.log("wordvalue: " + wordValue); 
             score += wordValue; 
             scoreBox.textContent = `Awesomeness: ${score}`; 
         }
@@ -3080,13 +3079,40 @@ function rightWordLooper(inputList, tagName) {
 
             //update score 
             let wordValue = list[index][1];
-            console.log("wordvalue: " + wordValue); 
-            score += wordValue; 
-            scoreBox.textContent = `Awesomeness: ${score}`
+            let target = score + wordValue; 
+            // score += wordValue; 
+            // scoreBox.textContent = `Awesomeness: ${score}`
+            animateScoreUpdate(tagName, score, target, 400); 
         }
     }
 
     displayNextName();
+}
+
+function animateScoreUpdate(element, startValue, targetValue, duration) {
+    const frameRate = 60; // Roughly 60 frames per second
+    const totalFrames = Math.round(duration / (duration / frameRate));
+    const increment = (targetValue - startValue) / totalFrames;
+    let currentValue = startValue;
+    let frame = 0;
+  
+    function updateScore() {
+      frame++;
+      currentValue += increment;
+  
+      // Update the display
+      element.textContent = Math.round(currentValue);
+  
+      // Check if the animation should stop
+      if (frame < totalFrames) {
+        requestAnimationFrame(updateScore);
+      } else {
+        // Ensure the final score is precise
+        element.textContent = targetValue;
+      }
+    }
+  
+    requestAnimationFrame(updateScore);
 }
 
 function toggleSelected1() {
@@ -3099,7 +3125,7 @@ function toggleSelected1() {
             wIndex += 2;
             console.log("left word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 500);
+        }, 400);
     }
 }
 
@@ -3113,7 +3139,7 @@ function toggleSelected2() {
             wIndex += 2;
             console.log("right word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 500);
+        }, 400);
     }
 }
 
