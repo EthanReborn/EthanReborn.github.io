@@ -1718,6 +1718,7 @@ var score = 0;
 var scoreBox = document.createElement('div');
 scoreBox.textContent = `Awesomeness: ${score}`
 scoreBox.setAttribute('id', 'score');
+scoreBox.className = "text"; 
 
 //selected/unselected flags for each of the two words being randomly generated
 var selected1 = false;
@@ -2065,11 +2066,10 @@ function completedStep(div, list1, list2) {
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
-
-        document.getElementById('main').removeChild(document.getElementById('score'));
-        // alert('Child removed!');
      
         document.getElementById('main').appendChild(container);
+
+        //reposition score counter
         document.getElementById('main').appendChild(document.getElementById('score')); 
     }
 
@@ -2082,6 +2082,7 @@ function completedStep(div, list1, list2) {
     document.getElementById('adj1').setAttribute('class', 'non-hover-text');
     document.getElementById('noun1').setAttribute('class', 'non-hover-text');
 
+    //pass next section to looper function
     setTimeout(() => leftWordLooper(list1, nextDivs[nextIndex + 1].id), 100);
     setTimeout(() => rightWordLooper(list2, nextDivs[nextIndex + 2].id), 200);
 }
