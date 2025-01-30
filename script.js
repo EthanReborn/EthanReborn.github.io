@@ -3133,13 +3133,13 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 
 function showScoreChange(amount) {
     //let scoreBox = document.getElementById('score');
-    if (!scoreBox) {
-        console.error("scoreBox not found!");
-        return;
-    }
+    // if (!scoreBox) {
+    //     console.error("scoreBox not found!");
+    //     return;
+    // }
 
     // Create the span
-    const scoreChange = document.createElement('span');
+    const scoreChange = document.createElement('div');
     scoreChange.classList.add('fade-number');
     scoreChange.textContent = `${amount > 0 ? '+' : ''}${amount}`;
     scoreChange.style.color = amount > 0 ? 'green' : 'red';
@@ -3147,19 +3147,25 @@ function showScoreChange(amount) {
     // Log the span before appending
     console.log("Creating and appending span:", scoreChange);
 
-    // Append to body for testing
-    document.body.appendChild(scoreChange); // Temporarily append to body to check
+    document.addEventListener('DOMContentLoaded', function () {
+        let scoreBox = document.getElementById('score');
+        if (!scoreBox) {
+            console.error("scoreBox not found");
+            return;
+        }
+        
+         // Append the span to the scoreBox
+        document.getElementById('score').appendChild(scoreChange);
+        document.getElementById('score').offsetHeight; 
+        console.log(document.getElementById('score'));
 
-    // Append the span to the scoreBox
-    document.getElementById('score').appendChild(scoreChange);
-    document.getElementById('score').offsetHeight; 
+        console.log("Score change appended to scoreBox:", scoreChange);
 
-    console.log("Score change appended to scoreBox:", scoreChange);
-
-    // Test with a timeout to ensure visibility
-    setTimeout(() => {
-        scoreChange.style.display = 'none'; // Hide after 2 seconds
-    }, 2000);
+        // Test with a timeout to ensure visibility
+        setTimeout(() => {
+            scoreChange.style.display = 'none'; // Hide after 2 seconds
+        }, 2000);
+    });
 }
 
 function toggleSelected1() {
@@ -3173,7 +3179,7 @@ function toggleSelected1() {
             wIndex += 2;
             console.log("left word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 7500);
+        }, 750);
     }
 }
 
@@ -3188,7 +3194,7 @@ function toggleSelected2() {
             wIndex += 2;
             console.log("right word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 7500);
+        }, 750);
     }
 }
 
