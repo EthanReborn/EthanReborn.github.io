@@ -3097,7 +3097,7 @@ function rightWordLooper(inputList, tagName) {
             }
     
             animateScoreUpdate(document.getElementById('score'), score, target, 500); 
-            showScoreChange(100);
+            showScoreChange(wordValue);
             score = target; 
         }
     }
@@ -3132,7 +3132,7 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 }
 
 function showScoreChange(amount) {
-    let scoreBox = document.getElementById('score');
+    //let scoreBox = document.getElementById('score');
     if (!scoreBox) {
         console.error("scoreBox not found!");
         return;
@@ -3151,7 +3151,8 @@ function showScoreChange(amount) {
     document.body.appendChild(scoreChange); // Temporarily append to body to check
 
     // Append the span to the scoreBox
-    scoreBox.appendChild(scoreChange);
+    document.getElementById('score').appendChild(scoreChange);
+    document.getElementById('score').offsetHeight; 
 
     console.log("Score change appended to scoreBox:", scoreChange);
 
