@@ -2938,7 +2938,7 @@ var score = 0;
 var scoreBox = document.createElement('div');
 scoreBox.textContent = `Awesomeness: ${score}`
 scoreBox.setAttribute('id', 'score');
-scoreBox.className = "centered-text"; 
+scoreBox.className = "score-box"; 
 
 //selected/unselected flags for each of the two words being randomly generated
 var selected1 = false;
@@ -3122,7 +3122,7 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
         requestAnimationFrame(updateScore);
       } else {
         // Ensure the final score is precise
-        element.textContent = targetValue;
+        element.textContent = `Awesomeness: ${targetValue}`;
       }
     }
   
@@ -3335,7 +3335,7 @@ function completedStep(div, list1, list2) {
         container.appendChild(nextDivs[nextIndex + 2]);
         document.getElementById('main').appendChild(container);
         //reposition score counter
-        document.getElementById('main').appendChild(document.getElementById('score')); 
+        document.getElementById('main').appendChild(document.getElementById('score'));
     }
 
     //reset flags to unselected 
