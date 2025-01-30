@@ -3140,6 +3140,7 @@ function showScoreChange(amount) {
 
     // Log the span before appending
     console.log("Creating and appending span:", scoreChange);
+    document.body.appendChild(scoreChange);
 
     // Find the scoreBox element (assumes it exists in the DOM)
     let box = document.getElementById('score');
