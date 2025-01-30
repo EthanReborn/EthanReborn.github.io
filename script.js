@@ -246,7 +246,7 @@ var nouns = [
     ["Retard", -2000],
     ["Grave Digger", 1700],
     ["Tom Cruise", 600],
-    ["Duracell Battery", -100],
+    ["Duracell Battery", -800],
     ["Robo-cop", 1800],
     ["Terminator", 1900],
     ["Cyber Ninja", 2000],
@@ -3132,32 +3132,28 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 }
 
 function showScoreChange(amount) {
-   // Create the div for the score change
-   const scoreChange = document.createElement('div');
-   scoreChange.classList.add('fade-number');
-   scoreChange.textContent = `${amount > 0 ? '+' : ''}${amount}`;
-   scoreChange.style.color = amount > 0 ? 'green' : 'red';
+   // Create HTML string for the score change
+   const scoreChangeHTML = `<div class="fade-number" style="color: ${amount > 0 ? 'green' : 'red'};">
+   ${amount > 0 ? '+' : ''}${amount}
+    </div>`;
 
-   // Find the scoreBox element
-   const box = document.getElementById('score');
-   
-   // Debugging: Ensure the element exists
-   console.log("scoreBox found:", box);
-   if (!box) {
-       console.error("scoreBox not found");
-       return;
-   }
+    // Find the scoreBox element
+    const box = document.getElementById('score');
+    if (!box) {
+    console.error("scoreBox not found");
+    return;
+    }
 
-   // Force the append to happen on the next available frame
-   requestAnimationFrame(() => {
-       box.appendChild(scoreChange);
-       console.log("Appended scoreChange:", scoreChange);
+    // Insert the score change directly into the scoreBox
+    box.insertAdjacentHTML('beforeend', scoreChangeHTML);
 
-       // Set timeout to remove after 2 seconds
-       setTimeout(() => {
-           scoreChange.style.display = 'none';
-       }, 2000);
-   });
+    console.log("Appended scoreChange HTML:", scoreChangeHTML);
+
+    // Test with a timeout to ensure visibility
+    setTimeout(() => {
+    const scoreChange = box.querySelector('.fade-number');
+    scoreChange.style.display = 'none'; // Hide after 2 seconds
+    }, 2000);
 }
 
 function toggleSelected1() {
