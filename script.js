@@ -3046,7 +3046,12 @@ function leftWordLooper(inputList, tagName) {
         else{
             nextDivs[nextIndex + 1].onclick = function () { };
             nextDivs[nextIndex + 1].setAttribute('class', 'non-hover-text');
-            //return;
+            
+            //update score 
+            let wordValue = list[index][1];
+            console.log("wordvalue: " + wordValue); 
+            score += wordValue; 
+            scoreBox.textContent = `Awesomeness: ${score}`; 
         }
     }
 
@@ -3078,7 +3083,6 @@ function rightWordLooper(inputList, tagName) {
             console.log("wordvalue: " + wordValue); 
             score += wordValue; 
             scoreBox.textContent = `Awesomeness: ${score}`
-            //return;
         }
     }
 
@@ -3089,17 +3093,13 @@ function toggleSelected1() {
     console.log("left toggle selected")
     selected1 = !selected1;
 
-    //update score 
-    score += 20; 
-    scoreBox.textContent = `Awesomeness: ${score}`
-
     if(selected1 && selected2){
         setTimeout( () => {
             nextIndex += 3;
             wIndex += 2;
             console.log("left word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 100);
+        }, 500);
     }
 }
 
@@ -3107,17 +3107,13 @@ function toggleSelected2() {
     console.log("right toggle selected")
     selected2 = !selected2;
 
-    //update score 
-    score += 20; 
-    scoreBox.textContent = `Awesomeness: ${score}`
-
     if(selected1 && selected2) {
          setTimeout( () => {
             nextIndex += 3;
             wIndex += 2;
             console.log("right word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 100);
+        }, 500);
     }
 }
 
