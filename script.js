@@ -1417,9 +1417,9 @@ var verbs = [
     ["paint", 900],
     ["deceive", -1500],
     ["cleanup", -400],
-    ["plague", -2000],
-    ["debate", -700],
-    ["argue with", -800],
+    ["plague", 800],
+    ["debate", -100],
+    ["argue with", -1000],
     ["yell at", -1400],
     ["learn about", 1300],
     ["combat", 1700],
@@ -3137,7 +3137,7 @@ function showScoreChange(amount) {
 
     // Create a span for the score change
     const scoreChange = document.createElement('span');
-    scoreChange.classList.add('fade-number');
+    scoreChange.classList.add('text');
 
     // Set the content for the score change, including sign (+/-)
     scoreChange.textContent = `${amount > 0 ? '+' : '-'}${amount}`;
@@ -3197,15 +3197,15 @@ function completedStep(div, list1, list2) {
         console.log('create button');
 
         //pluralize weaknesses
-        setTimeout( () =>
-        {
+        // setTimeout( () =>
+        // {
             // let oldText = nextDivs[nextIndex - 1].textContent.concat("s");
             // let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
             // nextDivs[nextIndex - 1].textContent = oldText;
             // console.log(nextDivs[nextIndex - 1]);
             // nextDivs[nextIndex - 1].style.display='none';
             // nextDivs[nextIndex - 1].style.display='block';
-        }, 10);
+        // }, 10);
 
         //turn off hover and toggles for last words
         nextDivs[nextDivs.length -1].onclick = function () { console.log('dummy function'); }
@@ -3221,9 +3221,9 @@ function completedStep(div, list1, list2) {
 
         //save as png function
         save.onclick = function () {
-        setTimeout(() => {
-                savePNG();
-            }, 100);
+            setTimeout(() => {
+                    savePNG();
+                }, 100);
         };
 
         //save as text button
@@ -3234,9 +3234,9 @@ function completedStep(div, list1, list2) {
 
         //save as txt function
         saveTxt.onclick = function () {
-        setTimeout(() => {
-                saveTXT();
-            }, 100);
+            setTimeout(() => {
+                    saveTXT();
+                }, 100);
         };
 
         //play again
