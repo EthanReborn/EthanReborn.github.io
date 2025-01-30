@@ -721,6 +721,7 @@ var verbs = [
     "campaign for",
     "come out to",
     "lose your virginity to",
+    "take over",
 ];
 
 //weapons
@@ -1017,6 +1018,14 @@ var locationsAndPlurals = [
     "vloggers",
     "the empire",
     "empires",
+    "the statue of liberty",
+    "money",
+    "fort knox",
+    "mummies",
+    "the olympics",
+    "the olympic swim team",
+    "communism",
+    "capitalism",
 ];
 
 //abilities
@@ -2034,7 +2043,7 @@ function completedStep(div, list1, list2) {
     //--------------------------------------//
 
     //retrieve main doc div
-    let mainDiv = document.getElementById('main').appendChild(div);
+    document.getElementById('main').appendChild(div);
 
     //create container for next section 
     let container = document.createElement('div');
@@ -2057,12 +2066,11 @@ function completedStep(div, list1, list2) {
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
 
-        // document.getElementById('main').removeChild(document.getElementById('score'));
+        //document.getElementById('main').removeChild(document.getElementById('score'));
         // alert('Child removed!');
      
-        mainDiv.appendChild(container);
-
-        // document.getElementById('main').appendChild(document.getElementById('score')); 
+        document.getElementById('main').appendChild(container);
+        document.getElementById('main').appendChild(document.getElementById('score')); 
     }
 
     //reset flags to unselected 
