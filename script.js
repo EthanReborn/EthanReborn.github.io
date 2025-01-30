@@ -717,8 +717,9 @@ var verbs = [
     "be creepy to",
     "insult",
     "be mean to",
-    "confess to",
     "declare war on",
+    "campaign for",
+    "come out to",
 ];
 
 //weapons
@@ -1392,7 +1393,6 @@ var fullNames = [
     "Ted Bundy",
 ];
 
-var score = 0; 
 
 document.title = "destiny's handbook 2"
 
@@ -1444,12 +1444,12 @@ shuffleArray(combined2);
 wordLists.push(locationsAndPlurals);
 wordLists.push(combined2);
 
+//------------------------------Creating dom elements and storing them in list-------------------------------//
 
-
+//main div
 var div = document.createElement("div");
 div.setAttribute('id', 'main');
 div.setAttribute('class', 'stuff-box')
-
 
 var title = document.createElement('h2');
 title.textContent = "Destiny's Handbook 2";
@@ -1699,12 +1699,16 @@ noun5.style.display = "center";
 noun5.className = "text";
 nextDivs.push(noun5);
 
-
-
+//add space
 var space1 = document.createElement('span');
 space1.textContent = "\t \t \t";
 
-//selected flags for each of the two words being randomly generated
+//running score 
+var score = 0; 
+var scoreBox = document.createElement('div');
+scoreBox.textContent = `Awesomeness: ${score}`
+
+//selected/unselected flags for each of the two words being randomly generated
 var selected1 = false;
 var selected2 = false;
 
@@ -1714,6 +1718,7 @@ div.appendChild(title);
 div.appendChild(manual);
 div.appendChild(answer1);
 div.appendChild(firstContainer);
+div.appendChild(scoreBox);
 
 //start random wheel for first question
 leftWordLooper(adjectives, 'adj1');
