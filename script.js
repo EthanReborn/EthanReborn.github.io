@@ -2034,7 +2034,7 @@ function completedStep(div, list1, list2) {
     //--------------------------------------//
 
     //retrieve main doc div
-    let main = document.getElementById('main').appendChild(div);
+    document.getElementById('main').appendChild(div);
 
     //create container for next section 
     let container = document.createElement('div');
@@ -2055,12 +2055,12 @@ function completedStep(div, list1, list2) {
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
 
-        main.removeChild(document.getElementById('score'));
+        document.getElementById('main').removeChild(document.getElementById('score'));
         //alert('Child removed!');
      
-        main.appendChild(container);
+        document.getElementById('main').appendChild(container);
 
-        main.appendChild(document.getElementById('score')); 
+        document.getElementById('main').appendChild(document.getElementById('score')); 
     }
 
     //reset flags to unselected 
