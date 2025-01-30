@@ -3132,12 +3132,6 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 }
 
 function showScoreChange(amount) {
-    //let scoreBox = document.getElementById('score');
-    // if (!scoreBox) {
-    //     console.error("scoreBox not found!");
-    //     return;
-    // }
-
     // Create the span
     const scoreChange = document.createElement('div');
     scoreChange.classList.add('fade-number');
@@ -3147,25 +3141,22 @@ function showScoreChange(amount) {
     // Log the span before appending
     console.log("Creating and appending span:", scoreChange);
 
-    document.addEventListener('DOMContentLoaded', function () {
-        let scoreBox = document.getElementById('score');
-        if (!scoreBox) {
-            console.error("scoreBox not found");
-            return;
-        }
-        
-         // Append the span to the scoreBox
-        document.getElementById('score').appendChild(scoreChange);
-        document.getElementById('score').offsetHeight; 
-        console.log(document.getElementById('score'));
+    // Find the scoreBox element (assumes it exists in the DOM)
+    let box = document.getElementById('score');
+    if (!scoreBox) {
+        console.error("scoreBox not found");
+        return;
+    }
 
-        console.log("Score change appended to scoreBox:", scoreChange);
+    // Append the span to the scoreBox
+    box.appendChild(scoreChange);
 
-        // Test with a timeout to ensure visibility
-        setTimeout(() => {
-            scoreChange.style.display = 'none'; // Hide after 2 seconds
-        }, 2000);
-    });
+    console.log("Score change appended to scoreBox:", scoreChange);
+
+    // Test with a timeout to ensure visibility
+    setTimeout(() => {
+        scoreChange.style.display = 'none'; // Hide after 2 seconds
+    }, 2000);
 }
 
 function toggleSelected1() {
