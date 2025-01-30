@@ -2066,7 +2066,7 @@ function completedStep(div, list1, list2) {
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
 
-        //document.getElementById('main').removeChild(document.getElementById('score'));
+        document.getElementById('main').removeChild(document.getElementById('score'));
         // alert('Child removed!');
      
         document.getElementById('main').appendChild(container);
