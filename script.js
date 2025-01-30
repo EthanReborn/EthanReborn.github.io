@@ -3115,7 +3115,7 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
       currentValue += increment;
   
       // Update the display
-      element.textContent = Math.round(currentValue);
+      element.textContent = `Awesomeness: ${Math.round(currentValue)}`;
   
       // Check if the animation should stop
       if (frame < totalFrames) {
