@@ -3132,8 +3132,8 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 }
 
 function showScoreChange(amount) {
-    const scoreBox = document.getElementById('scoreBox');
-    //const scoreValue = document.getElementById('scoreValue');
+    let scoreBox = document.getElementById('score');
+    const scoreValue = document.getElementById('scoreValue');
 
     // Create a span for the score change
     const scoreChange = document.createElement('span');
@@ -3144,6 +3144,7 @@ function showScoreChange(amount) {
     scoreChange.style.color = amount > 0 ? 'green' : 'red';
 
     // Append the newly created score change span
+    console.log(scoreChange)
     scoreBox.appendChild(scoreChange);
 
     // Trigger the fade-in and movement animation after a small delay to ensure it renders
