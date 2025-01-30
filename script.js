@@ -2042,7 +2042,7 @@ function completedStep(div, list1, list2) {
 
     //apply centered 1 column container (for 'son of' section)
     if (nextIndex == nextDivs.length - 3) {
-        alert('center column section'); 
+        //alert('center column section'); 
         space.textContent = "\t and \t";
         space.setAttribute('class', 'centered-text');
         container.setAttribute('class', 'clear-1-column');
