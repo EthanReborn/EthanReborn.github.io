@@ -3133,7 +3133,7 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 
 function showScoreChange(amount) {
     let scoreBox = document.getElementById('score');
-    const scoreValue = document.getElementById('scoreValue');
+    if (!scoreBox) return; // If scoreBox is not found, exit the function
 
     // Create a span for the score change
     const scoreChange = document.createElement('span');
@@ -3154,7 +3154,9 @@ function showScoreChange(amount) {
 
     // Remove the span after the animation completes (after 1.1 seconds)
     setTimeout(() => {
-        scoreBox.removeChild(scoreChange);
+        if (scoreChange.parentNode === scoreBox) {
+            scoreBox.removeChild(scoreChange); // Check if it’s still a child of scoreBox
+        }
     }, 1100); // Matches the animation duration
 }
 
