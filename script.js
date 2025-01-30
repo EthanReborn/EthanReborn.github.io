@@ -1570,7 +1570,7 @@ nextDivs.push(noun3);
 // nextDivs.push(name4);
 
 
-
+//YOUR WEAPON
 var answer6 = document.createElement('h2');
 answer6.textContent = "Your weapon: "
 nextDivs.push(answer6);
@@ -1720,7 +1720,7 @@ div.appendChild(title);
 div.appendChild(manual);
 div.appendChild(answer1);
 div.appendChild(firstContainer);
-div.appendChild(scoreBox);
+//div.appendChild(scoreBox);
 
 //start random wheel for first question
 leftWordLooper(adjectives, 'adj1');
@@ -2042,6 +2042,7 @@ function completedStep(div, list1, list2) {
 
     //apply centered 1 column container (for 'son of' section)
     if (nextIndex == nextDivs.length - 3) {
+        alert('center column section'); 
         space.textContent = "\t and \t";
         space.setAttribute('class', 'centered-text');
         container.setAttribute('class', 'clear-1-column');
@@ -2051,6 +2052,7 @@ function completedStep(div, list1, list2) {
         main.appendChild(container);
     //apply two column container (all other containers)
     }else{
+        console.log(nextDivs); 
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
