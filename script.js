@@ -3095,7 +3095,7 @@ function rightWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
     
-            animateScoreUpdate(document.getElementById('score'), score, target, 400); 
+            animateScoreUpdate(document.getElementById('score'), score, target, 500); 
             score = target; 
         }
     }
@@ -3133,13 +3133,14 @@ function toggleSelected1() {
     console.log("left toggle selected")
     selected1 = !selected1;
 
+    //how long to wait until next section 
     if(selected1 && selected2){
         setTimeout( () => {
             nextIndex += 3;
             wIndex += 2;
             console.log("left word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 650);
+        }, 750);
     }
 }
 
@@ -3147,13 +3148,14 @@ function toggleSelected2() {
     console.log("right toggle selected")
     selected2 = !selected2;
 
+    //how long to wait until next section 
     if(selected1 && selected2) {
          setTimeout( () => {
             nextIndex += 3;
             wIndex += 2;
             console.log("right word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 650);
+        }, 750);
     }
 }
 
