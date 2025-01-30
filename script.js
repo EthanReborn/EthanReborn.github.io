@@ -1181,6 +1181,8 @@ var locationsAndPlurals = [
     "the death star",
     "Naboo",
     "vloggers",
+    "the empire",
+    "empires",
 ];
 
 var abilities = [
