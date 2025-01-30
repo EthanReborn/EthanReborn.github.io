@@ -3132,32 +3132,32 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 }
 
 function showScoreChange(amount) {
-    // Create the span
-    const scoreChange = document.createElement('div');
-    scoreChange.classList.add('fade-number');
-    scoreChange.textContent = `${amount > 0 ? '+' : ''}${amount}`;
-    scoreChange.style.color = amount > 0 ? 'green' : 'red';
+   // Create the div for the score change
+   const scoreChange = document.createElement('div');
+   scoreChange.classList.add('fade-number');
+   scoreChange.textContent = `${amount > 0 ? '+' : ''}${amount}`;
+   scoreChange.style.color = amount > 0 ? 'green' : 'red';
 
-    // Log the span before appending
-    console.log("Creating and appending span:", scoreChange);
-    document.body.appendChild(scoreChange);
+   // Find the scoreBox element
+   const box = document.getElementById('score');
+   
+   // Debugging: Ensure the element exists
+   console.log("scoreBox found:", box);
+   if (!box) {
+       console.error("scoreBox not found");
+       return;
+   }
 
-    // Find the scoreBox element (assumes it exists in the DOM)
-    let box = document.getElementById('score');
-    if (!scoreBox) {
-        console.error("scoreBox not found");
-        return;
-    }
+   // Force the append to happen on the next available frame
+   requestAnimationFrame(() => {
+       box.appendChild(scoreChange);
+       console.log("Appended scoreChange:", scoreChange);
 
-    // Append the span to the scoreBox
-    box.appendChild(scoreChange);
-
-    console.log("scorebox: " + box);
-
-    // Test with a timeout to ensure visibility
-    setTimeout(() => {
-        scoreChange.style.display = 'none'; // Hide after 2 seconds
-    }, 2000);
+       // Set timeout to remove after 2 seconds
+       setTimeout(() => {
+           scoreChange.style.display = 'none';
+       }, 2000);
+   });
 }
 
 function toggleSelected1() {
