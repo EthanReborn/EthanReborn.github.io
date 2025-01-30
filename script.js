@@ -1718,7 +1718,7 @@ var score = 0;
 var scoreBox = document.createElement('div');
 scoreBox.textContent = `Awesomeness: ${score}`
 scoreBox.setAttribute('id', 'score');
-scoreBox.className = "text"; 
+scoreBox.className = "centered-text"; 
 
 //selected/unselected flags for each of the two words being randomly generated
 var selected1 = false;
@@ -2060,15 +2060,16 @@ function completedStep(div, list1, list2) {
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
         main.appendChild(container);
+        //reposition score counter
+        document.getElementById('main').appendChild(document.getElementById('score')); 
+
     //apply two column container (all other containers)
     }else{
         console.log(nextDivs); 
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
-     
         document.getElementById('main').appendChild(container);
-
         //reposition score counter
         document.getElementById('main').appendChild(document.getElementById('score')); 
     }
