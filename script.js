@@ -3049,8 +3049,16 @@ function leftWordLooper(inputList, tagName) {
             
             //update score 
             let wordValue = list[index][1];
-            score += wordValue; 
-            scoreBox.textContent = `Awesomeness: ${score}`; 
+            let target = score + wordValue; 
+
+            if(wordValue < 0){
+                scoreBox.className = "score-box-red"; 
+            } else {
+                scoreBox.className = "score-box-green"; 
+            }
+    
+            animateScoreUpdate(document.getElementById('score'), score, target, 400); 
+            score = target;  
         }
     }
 
@@ -3086,9 +3094,8 @@ function rightWordLooper(inputList, tagName) {
             } else {
                 scoreBox.className = "score-box-green"; 
             }
-            // score += wordValue; 
-            // scoreBox.textContent = `Awesomeness: ${score}`
-            animateScoreUpdate(document.getElementById(tagName), score, target, 400); 
+    
+            animateScoreUpdate(document.getElementById('score'), score, target, 400); 
             score = target; 
         }
     }
