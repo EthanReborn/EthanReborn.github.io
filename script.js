@@ -3151,7 +3151,7 @@ function showScoreChange(amount) {
     // Append the span to the scoreBox
     box.appendChild(scoreChange);
 
-    console.log("Score change appended to scoreBox:", scoreChange);
+    console.log("scorebox: " + box);
 
     // Test with a timeout to ensure visibility
     setTimeout(() => {
