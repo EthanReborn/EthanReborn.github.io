@@ -2407,6 +2407,7 @@ function resetPage() {
     div.appendChild(manual);
     div.appendChild(youAreDiv);
     div.appendChild(firstContainer);
+    div.append(scoreBox); 
 
     //start random wheel for first question
     leftWordLooper(adjectives, 'adj1');
