@@ -3057,8 +3057,8 @@ function leftWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
     
-            showScoreChange(wordValue);
             animateScoreUpdate(document.getElementById('score'), score, target, 400); 
+            showScoreChange(wordValue);
             score = target;  
         }
     }
@@ -3096,8 +3096,8 @@ function rightWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
     
-            showScoreChange(wordValue);
             animateScoreUpdate(document.getElementById('score'), score, target, 500); 
+            showScoreChange(wordValue);
             score = target; 
         }
     }
