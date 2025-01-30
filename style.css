@@ -166,6 +166,38 @@ title {
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
 }
 
+.score-box {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 1px;
+	font-size: 30px;
+	font-family: Baskerville, sans-serif;
+	font-weight: 700;
+	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
+}
+
+.score-box-red {
+	color: red;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 1px;
+	font-size: 30px;
+	font-family: Baskerville, sans-serif;
+	font-weight: 700;
+	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
+}
+
+.score-box-green {
+	color: green; 
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 1px;
+	font-size: 30px;
+	font-family: Baskerville, sans-serif;
+	font-weight: 700;
+	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
+}
+
 .button {
 	background: black;
 	color: white;

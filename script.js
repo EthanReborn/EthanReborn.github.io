@@ -3080,9 +3080,16 @@ function rightWordLooper(inputList, tagName) {
             //update score 
             let wordValue = list[index][1];
             let target = score + wordValue; 
+
+            if(wordValue < 0){
+                scoreBox.className = "score-box-red"; 
+            } else {
+                scoreBox.className = "score-box-green"; 
+            }
             // score += wordValue; 
             // scoreBox.textContent = `Awesomeness: ${score}`
-            animateScoreUpdate(tagName, score, target, 400); 
+            animateScoreUpdate(document.getElementById(tagName), score, target, 400); 
+            score = target; 
         }
     }
 
