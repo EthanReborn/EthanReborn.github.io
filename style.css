@@ -3,7 +3,7 @@
 
 html,
 body {
-	height: 165%;
+	height: 185%;
   	margin: 0;
 	padding: 0;
 }
@@ -27,6 +27,7 @@ h2 {
   	transform-origin: top center;
 }
 
+
 title {
 	font-size: 40px;
 	font-family: Luminari, fantasy;
@@ -34,10 +35,12 @@ title {
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
 }
 
+
 .shadowed {
 	text-shadow: 1px 1px 2px black;
 	color:       white;
 }
+
 
 .stuff-box {
 	color: black;
