@@ -1463,9 +1463,9 @@ manual.setAttribute('class', 'small-text');
 
 
 //YOU ARE A
-var answer1 = document.createElement('h2');
-answer1.textContent = "You Are a: "
-nextDivs.push(answer1);
+var youAreDiv = document.createElement('h2');
+youAreDiv.textContent = "You Are a: "
+nextDivs.push(youAreDiv);
 
 var adj1 = document.createElement('button');
 adj1.textContent = "";
@@ -1494,9 +1494,9 @@ firstContainer.appendChild(noun1);
 
 
 //THE
-var answer2 = document.createElement('h2');
-answer2.textContent = "The: "
-nextDivs.push(answer2);
+var theDiv = document.createElement('h2');
+theDiv.textContent = "The: "
+nextDivs.push(theDiv);
 
 var adj2 = document.createElement('button');
 adj2.textContent = "";
@@ -1520,9 +1520,9 @@ nextDivs.push(noun2);
 
 
 //DESTINED TO
-var answer3 = document.createElement('h2');
-answer3.textContent = "Destined to: "
-nextDivs.push(answer3);
+var destinedDiv = document.createElement('h2');
+destinedDiv.textContent = "Destined to: "
+nextDivs.push(destinedDiv);
 
 var verb1 = document.createElement('button');
 verb1.textContent = "";
@@ -1571,9 +1571,9 @@ nextDivs.push(noun3);
 
 
 //YOUR WEAPON
-var answer6 = document.createElement('h2');
-answer6.textContent = "Your weapon: "
-nextDivs.push(answer6);
+var weaponDiv = document.createElement('h2');
+weaponDiv.textContent = "Your weapon: "
+nextDivs.push(weaponDiv);
 
 var adj3 = document.createElement('button');
 adj3.textContent = "";
@@ -1597,9 +1597,9 @@ nextDivs.push(weapon1);
 
 
 //SPECIAL ABILITY
-var answer7 = document.createElement('h2');
-answer7.textContent = "Special Ability: "
-nextDivs.push(answer7);
+var abilityDiv = document.createElement('h2');
+abilityDiv.textContent = "Special Ability: "
+nextDivs.push(abilityDiv);
 
 var adj4 = document.createElement('button');
 adj4.textContent = "";
@@ -1623,9 +1623,9 @@ nextDivs.push(ability1);
 
 
 //YOUR COMPANION
-var answer8 = document.createElement('h2');
-answer8.textContent = "Your companion: "
-nextDivs.push(answer8);
+var companionDiv = document.createElement('h2');
+companionDiv.textContent = "Your companion: "
+nextDivs.push(companionDiv);
 
 var adj5 = document.createElement('button');
 adj5.textContent = "";
@@ -1649,9 +1649,9 @@ nextDivs.push(noun4);
 
 
 //YOUR VEHICLE
-var answer5 = document.createElement('h2');
-answer5.textContent = "Your vehicle: "
-nextDivs.push(answer5);
+var vehicleDiv = document.createElement('h2');
+vehicleDiv.textContent = "Your vehicle: "
+nextDivs.push(vehicleDiv);
 
 var adj7 = document.createElement('button');
 adj7.textContent = "";
@@ -1676,9 +1676,9 @@ nextDivs.push(vehicle1);
 
 
 //YOUR WEAKNESS
-var answer9 = document.createElement('h2');
-answer9.textContent = "Your weakness: "
-nextDivs.push(answer9);
+var weaknessDiv = document.createElement('h2');
+weaknessDiv.textContent = "Your weakness: "
+nextDivs.push(weaknessDiv);
 
 var adj6 = document.createElement('button');
 adj6.textContent = "";
@@ -1718,7 +1718,7 @@ var selected2 = false;
 document.body.appendChild(div);
 div.appendChild(title);
 div.appendChild(manual);
-div.appendChild(answer1);
+div.appendChild(youAreDiv);
 div.appendChild(firstContainer);
 //div.appendChild(scoreBox);
 
@@ -2206,7 +2206,7 @@ function resetPage() {
     // document.body.remove();
     div.replaceChildren();
 
-    nextDivs.push(answer1);
+    nextDivs.push(youAreDiv);
 
 
     adj1.textContent = "";
@@ -2227,7 +2227,7 @@ function resetPage() {
     nextDivs.push(noun1);
 
 
-    nextDivs.push(answer2);
+    nextDivs.push(theDiv);
 
 
     adj2.textContent = "";
@@ -2247,7 +2247,7 @@ function resetPage() {
     nextDivs.push(noun2);
 
 
-    nextDivs.push(answer3);
+    nextDivs.push(destinedDiv);
 
 
     verb1.textContent = "";
@@ -2287,27 +2287,7 @@ function resetPage() {
     // nextDivs.push(name4);
 
 
-    nextDivs.push(answer5);
-
-
-    adj7.textContent = "";
-    adj7.onclick = function () {
-        toggleSelected1();
-    }
-    adj7.style.display = "inline";
-    adj7.className = "text";
-    nextDivs.push(adj7);
-
-    vehicle1.textContent = "";
-    vehicle1.onclick = function () {
-        toggleSelected2();
-    }
-    vehicle1.style.display = "inline";
-    vehicle1.className = "text";
-    nextDivs.push(vehicle1);
-
-
-    nextDivs.push(answer6);
+    nextDivs.push(weaponDiv);
 
 
     adj3.textContent = "";
@@ -2327,7 +2307,7 @@ function resetPage() {
     nextDivs.push(weapon1);
 
 
-    nextDivs.push(answer7);
+    nextDivs.push(abilityDiv);
 
 
     adj4.textContent = "";
@@ -2347,7 +2327,7 @@ function resetPage() {
     nextDivs.push(ability1);
 
 
-    nextDivs.push(answer8);
+    nextDivs.push(companionDiv);
 
 
     adj5.textContent = "";
@@ -2367,7 +2347,28 @@ function resetPage() {
     nextDivs.push(noun4);
 
 
-    nextDivs.push(answer9);
+    //vehicle 
+    nextDivs.push(vehicleDiv);
+
+
+    adj7.textContent = "";
+    adj7.onclick = function () {
+        toggleSelected1();
+    }
+    adj7.style.display = "inline";
+    adj7.className = "text";
+    nextDivs.push(adj7);
+
+    vehicle1.textContent = "";
+    vehicle1.onclick = function () {
+        toggleSelected2();
+    }
+    vehicle1.style.display = "inline";
+    vehicle1.className = "text";
+    nextDivs.push(vehicle1);
+
+
+    nextDivs.push(weaknessDiv);
 
 
     adj6.textContent = "";
@@ -2390,11 +2391,11 @@ function resetPage() {
     selected1 = false;
     selected2 = false;
 
-    //start building DOM
+    //add first section to dom 
     document.body.appendChild(div);
     div.appendChild(title);
     div.appendChild(manual);
-    div.appendChild(answer1);
+    div.appendChild(youAreDiv);
     div.appendChild(firstContainer);
 
     //start random wheel for first question
