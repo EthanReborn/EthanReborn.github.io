@@ -720,6 +720,7 @@ var verbs = [
     "declare war on",
     "campaign for",
     "come out to",
+    "lose your virginity to",
 ];
 
 //weapons
@@ -1707,6 +1708,7 @@ space1.textContent = "\t \t \t";
 var score = 0; 
 var scoreBox = document.createElement('div');
 scoreBox.textContent = `Awesomeness: ${score}`
+scoreBox.setAttribute('id', 'score');
 
 //selected/unselected flags for each of the two words being randomly generated
 var selected1 = false;
@@ -1851,6 +1853,9 @@ function toggleSelected1() {
     console.log("left toggle selected")
     selected1 = !selected1;
 
+    //update score 
+    score += 20; 
+
     if(selected1 && selected2){
         setTimeout( () => {
             nextIndex += 3;
@@ -1864,6 +1869,9 @@ function toggleSelected1() {
 function toggleSelected2() {
     console.log("right toggle selected")
     selected2 = !selected2;
+
+    //update score 
+    score += 20; 
 
     if(selected1 && selected2) {
          setTimeout( () => {
@@ -2021,13 +2029,18 @@ function completedStep(div, list1, list2) {
     //     document.getElementById('main').appendChild(altContainer);
     // }
 
-    //append next section
-    document.getElementById('main').appendChild(div);
+    //--------------------------------------//
+    //----create and append next section----//
+    //--------------------------------------//
 
+    //retrieve main doc div
+    let main = document.getElementById('main').appendChild(div);
+
+    //create container for next section 
     let container = document.createElement('div');
     container.setAttribute('class', 'clear-column');
 
-    //apply centered container or 2 column container
+    //apply centered 1 column container (for 'son of' section)
     if (nextIndex == nextDivs.length - 3) {
         space.textContent = "\t and \t";
         space.setAttribute('class', 'centered-text');
@@ -2035,12 +2048,19 @@ function completedStep(div, list1, list2) {
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
-        document.getElementById('main').appendChild(container);
+        main.appendChild(container);
+    //apply two column container (all other containers)
     }else{
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
-        document.getElementById('main').appendChild(container);
+
+        main.removeChild(scoreBox);
+        //alert('Child removed!');
+     
+        main.appendChild(container);
+
+        main.appendChild(scoreBox); 
     }
 
     //reset flags to unselected 
