@@ -3035,8 +3035,8 @@ function leftWordLooper(inputList, tagName) {
     let list = inputList;
 
     function displayNextName() {
-        document.getElementById(tagName).textContent = list[index][0];
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
+        document.getElementById(tagName).textContent = list[index][0];
 
         //if not selected keep looping
         if (!selected1) {
@@ -3051,7 +3051,7 @@ function leftWordLooper(inputList, tagName) {
             let wordValue = list[index][1];
             let target = score + wordValue; 
 
-            if(wordValue < 0){
+            if(target < 0){
                 scoreBox.className = "score-box-red"; 
             } else {
                 scoreBox.className = "score-box-green"; 
@@ -3075,9 +3075,9 @@ function rightWordLooper(inputList, tagName) {
     }
 
     function displayNextName() {
-        document.getElementById(tagName).textContent = list[index][0];
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
-
+        document.getElementById(tagName).textContent = list[index][0];
+    
         if (!selected2) {
             setTimeout(displayNextName, 30); //displayNextName calls itself again in 30ms
         }
@@ -3089,7 +3089,7 @@ function rightWordLooper(inputList, tagName) {
             let wordValue = list[index][1];
             let target = score + wordValue; 
 
-            if(wordValue < 0){
+            if(target < 0){
                 scoreBox.className = "score-box-red"; 
             } else {
                 scoreBox.className = "score-box-green"; 
@@ -3139,7 +3139,7 @@ function toggleSelected1() {
             wIndex += 2;
             console.log("left word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 400);
+        }, 650);
     }
 }
 
@@ -3153,7 +3153,7 @@ function toggleSelected2() {
             wIndex += 2;
             console.log("right word chosen")
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 400);
+        }, 650);
     }
 }
 
@@ -3475,6 +3475,7 @@ function resetPage() {
     nextDivs = [];
     nextIndex = 0;
     wIndex = 0;
+    score = 0; 
 
     document.body.removeChild(div);
     // document.body.remove();
