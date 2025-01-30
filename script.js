@@ -3148,16 +3148,16 @@ function showScoreChange(amount) {
     scoreBox.appendChild(scoreChange);
 
     // Trigger the fade-in and movement animation after a small delay to ensure it renders
-    setTimeout(() => {
-        scoreChange.classList.add('fade-in-out');
-    }, 10);
+    // setTimeout(() => {
+    //     scoreChange.classList.add('fade-in-out');
+    // }, 10);
 
     // Remove the span after the animation completes (after 1.1 seconds)
-    setTimeout(() => {
-        if (scoreChange.parentNode === scoreBox) {
-            scoreBox.removeChild(scoreChange); // Check if it’s still a child of scoreBox
-        }
-    }, 1100); // Matches the animation duration
+    // setTimeout(() => {
+    //     if (scoreChange.parentNode === scoreBox) {
+    //         scoreBox.removeChild(scoreChange); // Check if it’s still a child of scoreBox
+    //     }
+    // }, 1100); // Matches the animation duration
 }
 
 function toggleSelected1() {
