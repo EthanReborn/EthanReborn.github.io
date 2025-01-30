@@ -3097,7 +3097,7 @@ function rightWordLooper(inputList, tagName) {
             }
     
             animateScoreUpdate(document.getElementById('score'), score, target, 500); 
-            showScoreChange(wordValue);
+            showScoreChange(100);
             score = target; 
         }
     }
