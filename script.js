@@ -405,7 +405,7 @@ var nouns = [
     ["Optimus Prime", 2000],
     ["Batman", 2000],
     ["prosecutor", -800],
-    ["priest", 1400],
+    ["priest", 800],
     ["iron man", 2000],
     ["inspector", 1200],
     ["dude", 500],
@@ -430,7 +430,7 @@ var nouns = [
     ["doctor", 1800],
     ["mutant", 1600],
     ["dummy", -1700],
-    ["corpse", -2000],
+    ["corpse", -1800],
     ["author", 1400],
     ["fashion designer", 1300],
     ["hunter", 1700],
@@ -452,10 +452,10 @@ var nouns = [
     ["inmate", -1300],
     ["builder", 1200],
     ["detective", 1800],
-    ["Gordan Ramsay", 2000],
-    ["Nosferatu", 1800],
+    ["Gordan Ramsay", 1300],
+    ["Nosferatu", 1400],
     ["vlogger", -700],
-    ["sith lord", 2000],
+    ["sith lord", 1900],
     ["serpent", -600],
     ["sugar daddy", -900],
     ["roman", 800],
@@ -785,14 +785,14 @@ var adjectives = [
     ["maniac", 1300],
     ["captain", 1800],
     ["lochness", 1400],
-    ["successful", 2000],
+    ["successful", 1500],
     ["zombie", 1000],
     ["genetic", 900],
     ["immortal", 2000],
     ["disinfected", -1000],
     ["cyber", 1700],
     ["undead", 1600],
-    ["lame", -2000],
+    ["lame", -1500],
     ["deaf", -1300],
     ["immortal", 2000],
     ["paper", -400],
@@ -808,7 +808,7 @@ var adjectives = [
     ["weird", 500],
     ["night", 1200],
     ["smoke", 800],
-    ["metal", 2000],
+    ["metal", 800],
     ["unhinged", 1100],
     ["super", 1700],
     ["invisible", 1900],
@@ -822,11 +822,11 @@ var adjectives = [
     ["insane", 1500],
     ["useless", -2000],
     ["bulimic", -2000],
-    ["on fire", 1700],
+    ["on fire", -1200],
     ["old", -1000],
     ["brutal", 1800],
     ["kinky", 600],
-    ["oiled-up", -300],
+    ["oiled-up", 300],
     ["sexist", -2000],
     ["angry", 800],
     ["burnt", -1200],
@@ -837,7 +837,7 @@ var adjectives = [
     ["unrelenting", 1600],
     ["hungry", -800],
     ["short", -900],
-    ["disgusting", -2000],
+    ["disgusting", -1900],
     ["robotic", 1500],
     ["retarded", -2000],
     ["stupid", -2000],
@@ -845,7 +845,7 @@ var adjectives = [
     ["mentally-challenged", -1800],
     ["young", 1000],
     ["inexperienced", -1000],
-    ["experienced", 1800],
+    ["experienced", 1000],
     ["creepy", -1500],
     ["yodeling", -900],
     ["clown", -1400],
@@ -878,7 +878,7 @@ var adjectives = [
     ["crazy", 1600],
     ["smoking", 600],
     ["broken", -2000],
-    ["exploding", 1900],
+    ["exploding", -900],
     ["unreliable", -1800],
     ["shot-up", -1700],
     ["lead", 400],
@@ -3057,6 +3057,7 @@ function leftWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
     
+            showScoreChange(wordValue);
             animateScoreUpdate(document.getElementById('score'), score, target, 400); 
             score = target;  
         }
@@ -3095,6 +3096,7 @@ function rightWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
     
+            showScoreChange(wordValue);
             animateScoreUpdate(document.getElementById('score'), score, target, 500); 
             score = target; 
         }
@@ -3127,6 +3129,32 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
     }
   
     requestAnimationFrame(updateScore);
+}
+
+function showScoreChange(amount) {
+    const scoreBox = document.getElementById('scoreBox');
+    //const scoreValue = document.getElementById('scoreValue');
+
+    // Create a span for the score change
+    const scoreChange = document.createElement('span');
+    scoreChange.classList.add('fade-number');
+
+    // Set the content for the score change, including sign (+/-)
+    scoreChange.textContent = `${amount > 0 ? '+' : '-'}${amount}`;
+    scoreChange.style.color = amount > 0 ? 'green' : 'red';
+
+    // Append the newly created score change span
+    scoreBox.appendChild(scoreChange);
+
+    // Trigger the fade-in and movement animation after a small delay to ensure it renders
+    setTimeout(() => {
+        scoreChange.classList.add('fade-in-out');
+    }, 10);
+
+    // Remove the span after the animation completes (after 1.1 seconds)
+    setTimeout(() => {
+        scoreBox.removeChild(scoreChange);
+    }, 1100); // Matches the animation duration
 }
 
 function toggleSelected1() {
@@ -3169,12 +3197,12 @@ function completedStep(div, list1, list2) {
         setTimeout( () =>
         {
             // let oldText = nextDivs[nextIndex - 1].textContent.concat("s");
-            let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
-            nextDivs[nextIndex - 1].textContent = oldText;
-            console.log(nextDivs[nextIndex - 1]);
+            // let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
+            // nextDivs[nextIndex - 1].textContent = oldText;
+            // console.log(nextDivs[nextIndex - 1]);
             // nextDivs[nextIndex - 1].style.display='none';
             // nextDivs[nextIndex - 1].style.display='block';
-        }, 50);
+        }, 10);
 
         //turn off hover and toggles for last words
         nextDivs[nextDivs.length -1].onclick = function () { console.log('dummy function'); }
@@ -3208,6 +3236,7 @@ function completedStep(div, list1, list2) {
             }, 100);
         };
 
+        //play again
         let restart = document.createElement('button');
         restart.setAttribute('class', 'red-button');
         restart.setAttribute('id', 'restart');
@@ -3241,6 +3270,11 @@ function completedStep(div, list1, list2) {
         document.getElementById('main').style.visibility = "visible";
         document.getElementById('main').height = screen.height;
         document.getElementById('main').width = screen.width;
+
+        //pluralize second weakness
+        let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
+        nextDivs[nextIndex - 1].textContent = oldText;
+        console.log(nextDivs[nextIndex - 1]);
 
         return;
     }
@@ -3478,6 +3512,7 @@ function resetPage() {
     nextIndex = 0;
     wIndex = 0;
     score = 0; 
+    scoreBox.textContent = `Awesomeness: ${score}`;
 
     document.body.removeChild(div);
     // document.body.remove();
