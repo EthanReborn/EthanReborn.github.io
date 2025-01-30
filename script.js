@@ -1865,6 +1865,7 @@ function toggleSelected1() {
 
     //update score 
     score += 20; 
+    scoreBox.textContent = `Awesomeness: ${score}`
 
     if(selected1 && selected2){
         setTimeout( () => {
@@ -1882,6 +1883,7 @@ function toggleSelected2() {
 
     //update score 
     score += 20; 
+    scoreBox.textContent = `Awesomeness: ${score}`
 
     if(selected1 && selected2) {
          setTimeout( () => {
