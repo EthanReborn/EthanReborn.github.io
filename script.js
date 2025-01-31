@@ -3175,7 +3175,7 @@ function toggleSelected1() {
             // Ensure the class is removed after the animation completes (1 second)
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
-            }, 1000); // Match this with the animation duration in CSS (1s)
+            }, 100); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
@@ -3201,7 +3201,7 @@ function toggleSelected2() {
             // Ensure the class is removed after the animation completes (1 second)
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
-            }, 1000); // Match this with the animation duration in CSS (1s)
+            }, 100); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
