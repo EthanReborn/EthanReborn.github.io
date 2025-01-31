@@ -417,7 +417,7 @@ var nouns = [
     ["war lord", 5000],
     ["Steve Jobs", 2000],
     ["eskimo", 700],
-    ["scavenger", -500],
+    ["scavenger", 500],
     ["model", 1500],
     ["super model", 1700],
     ["astronaut", 2000],
