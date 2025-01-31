@@ -3370,7 +3370,12 @@ function completedStep(div, list1, list2) {
         container.appendChild(nextDivs[nextIndex + 2]);
         document.getElementById('main').appendChild(container);
         //reposition score counter
-        document.getElementById('main').appendChild(document.getElementById('score'));
+        //document.getElementById('main').appendChild(document.getElementById('score'));
+        
+        const box = document.getElementById('scoreBox');
+
+        // Slide the scoreBox down when needed
+        box.classList.add('slide-down');
     }
 
     //reset flags to unselected 
