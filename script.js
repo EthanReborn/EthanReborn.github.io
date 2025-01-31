@@ -3342,6 +3342,8 @@ function completedStep(div, list1, list2) {
     //----create and append next section----//
     //--------------------------------------//
 
+    let box = document.getElementById('score');
+    document.getElementById('main').removeChild(box); 
     //retrieve main doc div
     document.getElementById('main').appendChild(div);
 
@@ -3364,11 +3366,11 @@ function completedStep(div, list1, list2) {
 
     //apply two column container (all other containers)
     }else{
-        //document.getElementById('main').appendChild(document.getElementById('score'));
-        const box = document.getElementById('score');
+        // //document.getElementById('main').appendChild(document.getElementById('score'));
+        // const box = document.getElementById('score');
 
-        // Slide the scoreBox down when needed
-        box.classList.add('slide-down');
+        // // Slide the scoreBox down when needed
+        // box.classList.add('slide-down');
 
         console.log(nextDivs); 
         container.appendChild(nextDivs[nextIndex + 1]);
@@ -3389,6 +3391,8 @@ function completedStep(div, list1, list2) {
     //pass next section to looper function
     setTimeout(() => leftWordLooper(list1, nextDivs[nextIndex + 1].id), 100);
     setTimeout(() => rightWordLooper(list2, nextDivs[nextIndex + 2].id), 200);
+
+    document.getElementById('main').appendChild('box'); 
 }
 
 function shuffleArray(array) {
