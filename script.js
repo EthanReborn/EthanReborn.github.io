@@ -3365,10 +3365,11 @@ function completedStep(div, list1, list2) {
     //apply two column container (all other containers)
     }else{
         //document.getElementById('main').appendChild(document.getElementById('score'));
-        const scoreBox = document.getElementById('scoreBox');
+        const box = document.getElementById('score');
 
         // Slide the scoreBox down when needed
-        scoreBox.classList.add('slide-down');
+        box.classList.add('slide-down');
+
         console.log(nextDivs); 
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
