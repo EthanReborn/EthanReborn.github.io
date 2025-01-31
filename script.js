@@ -3343,9 +3343,9 @@ function completedStep(div, list1, list2) {
     //--------------------------------------//
 
     let box = document.getElementById('score');
-    document.getElementById('main').removeChild(box); 
+
     //retrieve main doc div
-    document.getElementById('main').appendChild(div);
+    document.getElementById('main').insertBefore(div, box);
 
     //create container for next section 
     let container = document.createElement('div');
@@ -3360,9 +3360,7 @@ function completedStep(div, list1, list2) {
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
-        main.appendChild(container);
-        //reposition score counter
-        document.getElementById('main').appendChild(document.getElementById('score')); 
+        document.getElementById('main').insertBefore(container, box);
 
     //apply two column container (all other containers)
     }else{
@@ -3376,7 +3374,7 @@ function completedStep(div, list1, list2) {
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
-        document.getElementById('main').appendChild(container);
+        document.getElementById('main').insertBefore(container, box);
     }
 
     //reset flags to unselected 
@@ -3391,8 +3389,6 @@ function completedStep(div, list1, list2) {
     //pass next section to looper function
     setTimeout(() => leftWordLooper(list1, nextDivs[nextIndex + 1].id), 100);
     setTimeout(() => rightWordLooper(list2, nextDivs[nextIndex + 2].id), 200);
-
-    document.getElementById('main').appendChild('box'); 
 }
 
 function shuffleArray(array) {
