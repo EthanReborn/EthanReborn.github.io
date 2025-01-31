@@ -3075,6 +3075,9 @@ function rightWordLooper(inputList, tagName) {
         return;
     }
 
+    let box = document.getElementById('score');
+    box.classList.add('fade-in-out');
+
     function displayNextName() {
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
         document.getElementById(tagName).textContent = list[index][0];
