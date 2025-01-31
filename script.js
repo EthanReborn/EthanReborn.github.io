@@ -3364,18 +3364,16 @@ function completedStep(div, list1, list2) {
 
     //apply two column container (all other containers)
     }else{
+        //document.getElementById('main').appendChild(document.getElementById('score'));
+        const scoreBox = document.getElementById('scoreBox');
+
+        // Slide the scoreBox down when needed
+        scoreBox.classList.add('slide-down');
         console.log(nextDivs); 
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
         container.appendChild(nextDivs[nextIndex + 2]);
         document.getElementById('main').appendChild(container);
-        //reposition score counter
-        //document.getElementById('main').appendChild(document.getElementById('score'));
-        
-        const box = document.getElementById('scoreBox');
-
-        // Slide the scoreBox down when needed
-        box.classList.add('slide-down');
     }
 
     //reset flags to unselected 
