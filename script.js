@@ -3050,20 +3050,12 @@ function leftWordLooper(inputList, tagName) {
            //update score 
            let wordValue = list[index][1];
            let target = score + wordValue; 
-   
-           document.getElementById('score').textContent = `Epicness: ${score} ${wordValue > 0? '+' : ''}${wordValue}`;
 
            if(target < 0){
                scoreBox.className = "score-box-red"; 
            } else {
                scoreBox.className = "score-box-green"; 
            }
-           
-           sleep(100); 
-
-           setTimeout(() => {
-               scoreBox.textContent = `Epicness: ${score}`; 
-           }, 500); 
 
            animateScoreUpdate(document.getElementById('score'), score, target, 500); 
            showScoreChange(wordValue);
@@ -3097,8 +3089,6 @@ function rightWordLooper(inputList, tagName) {
             //update score 
             let wordValue = list[index][1];
             let target = score + wordValue; 
-    
-            document.getElementById('score').textContent = `Epicness: ${score} ${wordValue > 0? '+' : ''}${wordValue}`;
 
             if(target < 0){
                 scoreBox.className = "score-box-red"; 
@@ -3106,14 +3096,7 @@ function rightWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
 
-            setTimeout(() => {
-                scoreBox.textContent = `Epicness: ${score}`; 
-            }, 500); 
-
-            setTimeout(() => {
-                animateScoreUpdate(document.getElementById('score'), score, target, 500); 
-            }, 100); 
-
+            animateScoreUpdate(document.getElementById('score'), score, target, 500); 
             showScoreChange(wordValue);
             score = target; 
         }
@@ -3180,13 +3163,14 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
     const increment = (targetValue - startValue) / totalFrames;
     let currentValue = startValue;
     let frame = 0;
+    let points = targetValue - startValue; 
   
     function updateScore() {
       frame++;
       currentValue += increment;
   
       // Update the display
-      element.textContent = `Epicness: ${Math.round(currentValue)}`;
+      element.textContent = `Epicness: ${Math.round(currentValue)} ${points > 0? '+' : ''}${points}`;
   
       // Check if the animation should stop
       if (frame < totalFrames) {
