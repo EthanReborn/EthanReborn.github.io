@@ -3343,6 +3343,7 @@ function completedStep(div, list1, list2) {
     //--------------------------------------//
 
     let box = document.getElementById('score');
+    box.classList.add('fade-number');
 
     //retrieve main doc div
     document.getElementById('main').insertBefore(div, box);
