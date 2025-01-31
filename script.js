@@ -3089,12 +3089,11 @@ function rightWordLooper(inputList, tagName) {
             //update score 
             let wordValue = list[index][1];
             let target = score + wordValue; 
-            var addedScore = document.createElement('div');
-            addedScore.textContent = `${wordValue > 0? '+' : '-'}${wordValue}`
+    
+            scoreBox.textContent = `${wordValue > 0? '+' : '-'}${wordValue}`
             
-            scoreBox.appendChild(addedScore); 
             setTimeout(() => {
-                scoreBox.removeChild(addedScore); 
+                scoreBox.textContent = `Epicness: ${score}`; 
             }, 500); 
             //scoreBox.textContent = `Epicness: ${score} ${wordValue > 0? '+' : '-'}${wordValue}`;
 
@@ -3183,7 +3182,7 @@ function toggleSelected1() {
             // Ensure the class is removed after the animation completes (1 second)
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
-            }, 150); // Match this with the animation duration in CSS (1s)
+            }, 100); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
@@ -3209,7 +3208,7 @@ function toggleSelected2() {
             // Ensure the class is removed after the animation completes (1 second)
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
-            }, 150); // Match this with the animation duration in CSS (1s)
+            }, 100); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
