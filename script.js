@@ -2936,7 +2936,7 @@ space1.textContent = "\t \t \t";
 //running score 
 var score = 0; 
 var scoreBox = document.createElement('div');
-scoreBox.textContent = `Awesomeness: ${score}`
+scoreBox.textContent = `Epicness: ${score}`
 scoreBox.setAttribute('id', 'score');
 scoreBox.className = "score-box"; 
 
@@ -3089,6 +3089,14 @@ function rightWordLooper(inputList, tagName) {
             //update score 
             let wordValue = list[index][1];
             let target = score + wordValue; 
+            var addedScore = document.createElement('div');
+            addedScore.textContent = `${wordValue > 0? '+' : '-'}${wordValue}`
+            
+            scoreBox.appendChild(addedScore); 
+            setTimeout(() => {
+                scoreBox.removeChild(addedScore); 
+            }); 
+            //scoreBox.textContent = `Epicness: ${score} ${wordValue > 0? '+' : '-'}${wordValue}`;
 
             if(target < 0){
                 scoreBox.className = "score-box-red"; 
@@ -3117,14 +3125,14 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
       currentValue += increment;
   
       // Update the display
-      element.textContent = `Awesomeness: ${Math.round(currentValue)}`;
+      element.textContent = `Epicness: ${Math.round(currentValue)}`;
   
       // Check if the animation should stop
       if (frame < totalFrames) {
         requestAnimationFrame(updateScore);
       } else {
         // Ensure the final score is precise
-        element.textContent = `Awesomeness: ${targetValue}`;
+        element.textContent = `Epicness: ${targetValue}`;
       }
     }
   
@@ -3175,7 +3183,7 @@ function toggleSelected1() {
             // Ensure the class is removed after the animation completes (1 second)
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
-            }, 100); // Match this with the animation duration in CSS (1s)
+            }, 150); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
@@ -3201,7 +3209,7 @@ function toggleSelected2() {
             // Ensure the class is removed after the animation completes (1 second)
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
-            }, 100); // Match this with the animation duration in CSS (1s)
+            }, 150); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
@@ -3540,7 +3548,7 @@ function resetPage() {
     nextIndex = 0;
     wIndex = 0;
     score = 0; 
-    scoreBox.textContent = `Awesomeness: ${score}`;
+    scoreBox.textContent = `Epicness: ${score}`;
 
     document.body.removeChild(div);
     // document.body.remove();
