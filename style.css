@@ -174,7 +174,7 @@ title {
 	font-size: 25px;
 	font-family: Arial, sans-serif;
 	font-weight: 700;
-	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	white-space: pre-line; /* Respect \n */
 }
 
