@@ -325,14 +325,23 @@ title {
     opacity: 0;
 	display: inline-block;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    color: green; /* Default color, can change based on positive/negative value */
 	z-index: 9999;
 }
 
-.fade-number.fade-in-out {
-    opacity: 1;
-	display: inline-block;
-    transform: translateY(-10px); /* Moves the number upward */
+.fade-in-out {
+    animation: fade-in-out 1s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #scoreBox {
@@ -346,3 +355,5 @@ title {
 #scoreBox.slide-down {
 	top: 90vh; /* Move it near the bottom of the page */
 }
+
+

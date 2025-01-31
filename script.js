@@ -3343,7 +3343,14 @@ function completedStep(div, list1, list2) {
     //--------------------------------------//
 
     let box = document.getElementById('score');
-    box.classList.add('fade-number');
+    
+    // Apply fade-in-out animation
+    box.classList.add('fade-in-out');
+
+    // Ensure the class is removed after the animation completes (1 second)
+    setTimeout(() => {
+        box.classList.remove('fade-in-out');
+    }, 1000); // Match this with the animation duration in CSS (1s)
 
     //retrieve main doc div
     document.getElementById('main').insertBefore(div, box);
@@ -3392,7 +3399,7 @@ function completedStep(div, list1, list2) {
     setTimeout(() => rightWordLooper(list2, nextDivs[nextIndex + 2].id), 200);
 
     //let box = document.getElementById('score');
-    box.classList.remove('fade-number'); 
+    //box.classList.remove('fade-number'); 
 }
 
 function shuffleArray(array) {
