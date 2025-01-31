@@ -176,6 +176,7 @@ title {
 	font-weight: 700;
 	text-shadow: -2px -2px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
 	white-space: pre-line; /* Respect \n */
+	border-color: #5d4a1f;
 }
 
 .score-box-red {
@@ -188,6 +189,7 @@ title {
 	font-family: Arial, sans-serif;
 	font-weight: 700;
 	text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	border-color: #5d4a1f;
 }
 
 .score-box-green {
@@ -200,6 +202,7 @@ title {
 	font-family: Arial, sans-serif;
 	font-weight: 700;
 	text-shadow: -2px -2px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
+	border-color: #5d4a1f;
 }
 
 .button {
