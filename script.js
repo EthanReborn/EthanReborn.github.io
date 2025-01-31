@@ -3075,9 +3075,6 @@ function rightWordLooper(inputList, tagName) {
         return;
     }
 
-    let box = document.getElementById('score');
-    box.classList.add('fade-in-out');
-
     function displayNextName() {
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
         document.getElementById(tagName).textContent = list[index][0];
@@ -3393,6 +3390,9 @@ function completedStep(div, list1, list2) {
     //pass next section to looper function
     setTimeout(() => leftWordLooper(list1, nextDivs[nextIndex + 1].id), 100);
     setTimeout(() => rightWordLooper(list2, nextDivs[nextIndex + 2].id), 200);
+
+    //let box = document.getElementById('score');
+    box.classList.remove('fade-number'); 
 }
 
 function shuffleArray(array) {
