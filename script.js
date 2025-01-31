@@ -3095,7 +3095,7 @@ function rightWordLooper(inputList, tagName) {
             scoreBox.appendChild(addedScore); 
             setTimeout(() => {
                 scoreBox.removeChild(addedScore); 
-            }); 
+            }, 500); 
             //scoreBox.textContent = `Epicness: ${score} ${wordValue > 0? '+' : '-'}${wordValue}`;
 
             if(target < 0){
