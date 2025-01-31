@@ -3105,14 +3105,15 @@ function rightWordLooper(inputList, tagName) {
             } else {
                 scoreBox.className = "score-box-green"; 
             }
-            
-            sleep(1000); 
 
             setTimeout(() => {
                 scoreBox.textContent = `Epicness: ${score}`; 
             }, 500); 
 
-            animateScoreUpdate(document.getElementById('score'), score, target, 500); 
+            setTimeout(() => {
+                animateScoreUpdate(document.getElementById('score'), score, target, 500); 
+            }, 500); 
+            
             showScoreChange(wordValue);
             score = target; 
         }
