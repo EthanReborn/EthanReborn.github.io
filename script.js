@@ -1370,7 +1370,7 @@ var verbs = [
     ["sing to", -200],
     ["bring back", 1700],
     ["air-fry", -700],
-    ["drown", -2000],
+    ["drown", 500],
     ["terrorize", -2000],
     ["liquify", -1000],
     ["vacuum", -2800],
