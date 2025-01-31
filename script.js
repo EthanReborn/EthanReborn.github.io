@@ -3166,6 +3166,15 @@ function toggleSelected1() {
             nextIndex += 3;
             wIndex += 2;
             console.log("left word chosen")
+
+            // Apply fade-in-out animation
+            box.classList.add('fade-in-out');
+
+            // Ensure the class is removed after the animation completes (1 second)
+            setTimeout(() => {
+                box.classList.remove('fade-in-out');
+            }, 1000); // Match this with the animation duration in CSS (1s)
+
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
     }
@@ -3181,6 +3190,15 @@ function toggleSelected2() {
             nextIndex += 3;
             wIndex += 2;
             console.log("right word chosen")
+
+            // Apply fade-in-out animation
+            box.classList.add('fade-in-out');
+
+            // Ensure the class is removed after the animation completes (1 second)
+            setTimeout(() => {
+                box.classList.remove('fade-in-out');
+            }, 1000); // Match this with the animation duration in CSS (1s)
+
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 750);
     }
@@ -3343,14 +3361,6 @@ function completedStep(div, list1, list2) {
     //--------------------------------------//
 
     let box = document.getElementById('score');
-    
-    // Apply fade-in-out animation
-    box.classList.add('fade-in-out');
-
-    // Ensure the class is removed after the animation completes (1 second)
-    setTimeout(() => {
-        box.classList.remove('fade-in-out');
-    }, 1000); // Match this with the animation duration in CSS (1s)
 
     //retrieve main doc div
     document.getElementById('main').insertBefore(div, box);
