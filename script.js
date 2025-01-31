@@ -3112,8 +3112,8 @@ function rightWordLooper(inputList, tagName) {
 
             setTimeout(() => {
                 animateScoreUpdate(document.getElementById('score'), score, target, 500); 
-            }, 500); 
-            
+            }, 100); 
+
             showScoreChange(wordValue);
             score = target; 
         }
