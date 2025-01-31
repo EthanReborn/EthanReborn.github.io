@@ -3068,7 +3068,7 @@ function leftWordLooper(inputList, tagName) {
                scoreBox.className = "score-box-green"; 
            }
 
-           animateScoreUpdate(document.getElementById('score'), score, target, 700); 
+           animateScoreUpdate(document.getElementById('score'), score, target, 800); 
            showScoreChange(wordValue);
            score = target; 
         }
@@ -3107,7 +3107,7 @@ function rightWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
 
-            animateScoreUpdate(document.getElementById('score'), score, target, 700); 
+            animateScoreUpdate(document.getElementById('score'), score, target, 800); 
             showScoreChange(wordValue);
             score = target; 
         }
@@ -3138,7 +3138,7 @@ function toggleSelected1() {
             }, 100); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 750);
+        }, 850);
     }
 }
 
@@ -3164,7 +3164,7 @@ function toggleSelected2() {
             }, 100); // Match this with the animation duration in CSS (1s)
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 750);
+        }, 850);
     }
 }
 
