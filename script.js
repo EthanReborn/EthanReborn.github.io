@@ -3172,7 +3172,7 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
       // Update the display
           // Update the display with colored spans
         element.innerHTML = `
-            <span style="color: ${points > 0 ? 'green' : 'red'};>
+            <span style="color: ${points > 0 ? 'green' : 'red'};">
             ${points > 0 ? '+' : ''}${points}
             </span><br>
             <span>Epicness: ${Math.round(currentValue)}</span>
