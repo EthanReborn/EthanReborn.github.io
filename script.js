@@ -3090,11 +3090,11 @@ function rightWordLooper(inputList, tagName) {
             let wordValue = list[index][1];
             let target = score + wordValue; 
     
-            scoreBox.textContent = `${wordValue > 0? '+' : '-'}${wordValue}`
+            document.getElementById('score').textContent = `${wordValue > 0? '+' : '-'}${wordValue}`;
             
-            setTimeout(() => {
-                scoreBox.textContent = `Epicness: ${score}`; 
-            }, 500); 
+            // setTimeout(() => {
+            //     scoreBox.textContent = `Epicness: ${score}`; 
+            // }, 500); 
             //scoreBox.textContent = `Epicness: ${score} ${wordValue > 0? '+' : '-'}${wordValue}`;
 
             if(target < 0){
