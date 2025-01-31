@@ -3083,7 +3083,7 @@ function rightWordLooper(inputList, tagName) {
         return;
     }
 
-    function displayNextName() {
+    async function displayNextName() {
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
         document.getElementById(tagName).textContent = list[index][0];
     
