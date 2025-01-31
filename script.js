@@ -3170,7 +3170,13 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
       currentValue += increment;
   
       // Update the display
-      element.innerHTML = `${points > 0 ? '+' : ''}${points}<br>Epicness: ${Math.round(currentValue)}`;
+          // Update the display with colored spans
+        element.innerHTML = `
+            <span style="color: ${points > 0 ? 'green' : 'red'};">
+            ${points > 0 ? '+' : ''}${points}
+            </span><br>
+            <span>Epicness: ${Math.round(currentValue)}</span>
+        `;
   
       // Check if the animation should stop
       if (frame < totalFrames) {
