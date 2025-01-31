@@ -170,56 +170,35 @@ title {
 	display: block;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	padding: 1px;
 	font-size: 25px;
 	font-family: Arial, sans-serif;
 	font-weight: 700;
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%; /* Full width if needed */
-	background-color: #f3f3f3; /* Optional styling */
-	text-align: center;
-	padding: 10px;
-	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .score-box-red {
-	color: red;
 	display: block;
+	color: red;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	padding: 1px;
 	font-size: 25px;
 	font-family: Arial, sans-serif;
 	font-weight: 700;
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%; /* Full width if needed */
-	background-color: #f3f3f3; /* Optional styling */
-	text-align: center;
-	padding: 10px;
-	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .score-box-green {
-	color: green; 
 	display: block;
+	color: green; 
 	margin-bottom: 10px;
 	margin-top: 10px;
+	padding: 1px;
 	font-size: 25px;
 	font-family: Arial, sans-serif;
 	font-weight: 700;
 	text-shadow: -1px -1px 0 #d4bb16, 1px -1px 0 #d4bb16, -1px 1px 0 #d4bb16, 1px 1px 0 #d4bb16;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%; /* Full width if needed */
-	background-color: #f3f3f3; /* Optional styling */
-	text-align: center;
-	padding: 10px;
-	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .button {
@@ -354,4 +333,16 @@ title {
     opacity: 1;
 	display: inline-block;
     transform: translateY(-10px); /* Moves the number upward */
+}
+
+#scoreBox {
+	position: absolute;
+	top: 10px;
+	left: 50%; /* Center horizontally */
+	transform: translateX(-50%);
+	transition: top 0.5s ease;
+  }
+  
+#scoreBox.slide-down {
+	top: 90vh; /* Move it near the bottom of the page */
 }
