@@ -3047,19 +3047,27 @@ function leftWordLooper(inputList, tagName) {
             nextDivs[nextIndex + 1].onclick = function () { };
             nextDivs[nextIndex + 1].setAttribute('class', 'non-hover-text');
             
-            //update score 
-            let wordValue = list[index][1];
-            let target = score + wordValue; 
+           //update score 
+           let wordValue = list[index][1];
+           let target = score + wordValue; 
+   
+           document.getElementById('score').textContent = `Epicness: ${score} ${wordValue > 0? '+' : ''}${wordValue}`;
 
-            if(target < 0){
-                scoreBox.className = "score-box-red"; 
-            } else {
-                scoreBox.className = "score-box-green"; 
-            }
-    
-            animateScoreUpdate(document.getElementById('score'), score, target, 400); 
-            showScoreChange(wordValue);
-            score = target;  
+           if(target < 0){
+               scoreBox.className = "score-box-red"; 
+           } else {
+               scoreBox.className = "score-box-green"; 
+           }
+           
+           sleep(100); 
+
+           setTimeout(() => {
+               scoreBox.textContent = `Epicness: ${score}`; 
+           }, 500); 
+
+           animateScoreUpdate(document.getElementById('score'), score, target, 500); 
+           showScoreChange(wordValue);
+           score = target; 
         }
     }
 
@@ -3090,26 +3098,79 @@ function rightWordLooper(inputList, tagName) {
             let wordValue = list[index][1];
             let target = score + wordValue; 
     
-            document.getElementById('score').textContent = `${wordValue > 0? '+' : '-'}${wordValue}`;
-            
-            // setTimeout(() => {
-            //     scoreBox.textContent = `Epicness: ${score}`; 
-            // }, 500); 
-            //scoreBox.textContent = `Epicness: ${score} ${wordValue > 0? '+' : '-'}${wordValue}`;
+            document.getElementById('score').textContent = `Epicness: ${score} ${wordValue > 0? '+' : ''}${wordValue}`;
 
             if(target < 0){
                 scoreBox.className = "score-box-red"; 
             } else {
                 scoreBox.className = "score-box-green"; 
             }
-    
-            // animateScoreUpdate(document.getElementById('score'), score, target, 500); 
-            // showScoreChange(wordValue);
+            
+            sleep(100); 
+
+            setTimeout(() => {
+                scoreBox.textContent = `Epicness: ${score}`; 
+            }, 500); 
+
+            animateScoreUpdate(document.getElementById('score'), score, target, 500); 
+            showScoreChange(wordValue);
             score = target; 
         }
     }
 
     displayNextName();
+}
+
+function toggleSelected1() {
+    console.log("left toggle selected")
+    selected1 = !selected1;
+
+    //how long to wait until next section 
+    if(selected1 && selected2){
+        setTimeout( () => {
+            nextIndex += 3;
+            wIndex += 2;
+            console.log("left word chosen")
+
+            let box = document.getElementById('score');
+
+            // Apply fade-in-out animation
+            box.classList.add('fade-in-out');
+
+            // Ensure the class is removed after the animation completes (1 second)
+            setTimeout(() => {
+                box.classList.remove('fade-in-out');
+            }, 100); // Match this with the animation duration in CSS (1s)
+
+            setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
+        }, 750);
+    }
+}
+
+function toggleSelected2() {
+    console.log("right toggle selected")
+    selected2 = !selected2;
+
+    //how long to wait until next section 
+    if(selected1 && selected2) {
+         setTimeout( () => {
+            nextIndex += 3;
+            wIndex += 2;
+            console.log("right word chosen")
+
+            let box = document.getElementById('score');
+
+            // Apply fade-in-out animation
+            box.classList.add('fade-in-out');
+
+            // Ensure the class is removed after the animation completes (1 second)
+            setTimeout(() => {
+                box.classList.remove('fade-in-out');
+            }, 100); // Match this with the animation duration in CSS (1s)
+
+            setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
+        }, 750);
+    }
 }
 
 function animateScoreUpdate(element, startValue, targetValue, duration) {
@@ -3163,56 +3224,8 @@ function showScoreChange(amount) {
 //     }, 2000);
 }
 
-function toggleSelected1() {
-    console.log("left toggle selected")
-    selected1 = !selected1;
-
-    //how long to wait until next section 
-    if(selected1 && selected2){
-        setTimeout( () => {
-            nextIndex += 3;
-            wIndex += 2;
-            console.log("left word chosen")
-
-            let box = document.getElementById('score');
-
-            // Apply fade-in-out animation
-            box.classList.add('fade-in-out');
-
-            // Ensure the class is removed after the animation completes (1 second)
-            setTimeout(() => {
-                box.classList.remove('fade-in-out');
-            }, 100); // Match this with the animation duration in CSS (1s)
-
-            setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 750);
-    }
-}
-
-function toggleSelected2() {
-    console.log("right toggle selected")
-    selected2 = !selected2;
-
-    //how long to wait until next section 
-    if(selected1 && selected2) {
-         setTimeout( () => {
-            nextIndex += 3;
-            wIndex += 2;
-            console.log("right word chosen")
-
-            let box = document.getElementById('score');
-
-            // Apply fade-in-out animation
-            box.classList.add('fade-in-out');
-
-            // Ensure the class is removed after the animation completes (1 second)
-            setTimeout(() => {
-                box.classList.remove('fade-in-out');
-            }, 100); // Match this with the animation duration in CSS (1s)
-
-            setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
-        }, 750);
-    }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function completedStep(div, list1, list2) {
