@@ -3167,6 +3167,8 @@ function toggleSelected1() {
             wIndex += 2;
             console.log("left word chosen")
 
+            let box = document.getElementById('score');
+
             // Apply fade-in-out animation
             box.classList.add('fade-in-out');
 
@@ -3190,6 +3192,8 @@ function toggleSelected2() {
             nextIndex += 3;
             wIndex += 2;
             console.log("right word chosen")
+
+            let box = document.getElementById('score');
 
             // Apply fade-in-out animation
             box.classList.add('fade-in-out');
