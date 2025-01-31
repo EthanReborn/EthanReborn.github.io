@@ -3106,7 +3106,7 @@ function rightWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
             
-            sleep(100); 
+            sleep(1000); 
 
             setTimeout(() => {
                 scoreBox.textContent = `Epicness: ${score}`; 
