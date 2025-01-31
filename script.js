@@ -3133,27 +3133,27 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
 
 function showScoreChange(amount) {
    // Create HTML string for the score change
-   const scoreChangeHTML = `<div class="fade-number" style="color: ${amount > 0 ? 'green' : 'red'};">
-   ${amount > 0 ? '+' : ''}${amount}
-    </div>`;
+   //const scoreChangeHTML = `<div class="fade-number" style="color: ${amount > 0 ? 'green' : 'red'};">
+//    ${amount > 0 ? '+' : ''}${amount}
+//     </div>`;
 
-    // Find the scoreBox element
-    const box = document.getElementById('score');
-    if (!box) {
-    console.error("scoreBox not found");
-    return;
-    }
+//     // Find the scoreBox element
+//     const box = document.getElementById('score');
+//     if (!box) {
+//     console.error("scoreBox not found");
+//     return;
+//     }
 
-    // Insert the score change directly into the scoreBox
-    box.insertAdjacentHTML('beforeend', scoreChangeHTML);
+//     // Insert the score change directly into the scoreBox
+//     box.insertAdjacentHTML('beforeend', scoreChangeHTML);
 
-    console.log("Appended scoreChange HTML:", scoreChangeHTML);
+//     console.log("Appended scoreChange HTML:", scoreChangeHTML);
 
-    // Test with a timeout to ensure visibility
-    setTimeout(() => {
-    const scoreChange = box.querySelector('.fade-number');
-    scoreChange.style.display = 'none'; // Hide after 2 seconds
-    }, 2000);
+//     // Test with a timeout to ensure visibility
+//     setTimeout(() => {
+//     const scoreChange = box.querySelector('.fade-number');
+//     scoreChange.style.display = 'none'; // Hide after 2 seconds
+//     }, 2000);
 }
 
 function toggleSelected1() {
