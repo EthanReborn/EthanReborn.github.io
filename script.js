@@ -74,7 +74,7 @@ manual.setAttribute('class', 'small-text');
 
 //YOU ARE A
 var youAreDiv = document.createElement('h2');
-youAreDiv.textContent = "You Are a: "
+youAreDiv.textContent = "You Are a:"
 nextDivs.push(youAreDiv);
 
 var adj1 = document.createElement('button');
@@ -492,9 +492,7 @@ function toggleSelected1() {
     if(selected1 && selected2){
         setTimeout( () => {
 
-            console.log(nextDivs[nextIndex].textContent);
-
-            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]) && nextIndex === 0){
+            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 2]) && nextIndex === 0){
                 nextDivs[0].textContent = "You Are an: ";
             }
 
@@ -530,8 +528,8 @@ function toggleSelected2() {
             console.log(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]);
             console.log(isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]));
 
-            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]) && nextIndex === 0){
-                nextDivs[0].textContent = "You Are an: ";
+            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 2]) && nextIndex === 0){
+                nextDivs[0].textContent = "You Are an:";
             }
 
             nextIndex += 3;
