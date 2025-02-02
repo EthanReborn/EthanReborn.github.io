@@ -913,6 +913,15 @@ function pluralize(word) {
     if(word == "luke skywalker"){
         return "luke skywalker";
     }
+    if(word == "batman"){
+        return "batman";
+    }
+    if(word == "chemicals"){
+        return "chemicals"; 
+    }
+    if(word == "jesus"){
+        return "jesus"; 
+    }
     else if(word[word.length -1] == "h" || word[word.length -1] == "o" || word[word.length -1] == "s"){
         return word += "es";
     }
