@@ -526,6 +526,8 @@ function toggleSelected2() {
     if(selected1 && selected2) {
          setTimeout( () => {
 
+            console.log(nextDivs[nextIndex].textContent);
+            console.log(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]);
             console.log(isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]));
 
             if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]) && nextIndex === 0){
