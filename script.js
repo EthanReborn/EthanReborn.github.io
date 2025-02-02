@@ -907,6 +907,12 @@ function pluralize(word) {
     if(word == "freeze ray"){
         return "freeze rays";
     }
+    if(word == "han solo"){
+        return "han solo";
+    }
+    if(word == "luke skywalker"){
+        return "luke skywalker";
+    }
     else if(word[word.length -1] == "h" || word[word.length -1] == "o" || word[word.length -1] == "s"){
         return word += "es";
     }
