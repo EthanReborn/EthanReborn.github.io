@@ -246,7 +246,7 @@ export const adjectives = [
     ["zombie", 10000],
     ["genetic", 9000],
     ["immortal", 20000],
-    ["disinfected", -10000],
+    ["disinfected", 3000],
     ["cyber", 17000],
     ["undead", 16000],
     ["lame", -15000],

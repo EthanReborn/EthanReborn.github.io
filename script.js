@@ -10,15 +10,15 @@ var nextIndex = 0;
 var wIndex = 0;
 var wordLists = [];
 
-//you are a
+//character word bank
 wordLists.push(adjectives);
 wordLists.push(nouns);
 
-//the
+//title word bank
 wordLists.push(adjectives);
 wordLists.push(nouns);
 
-//destined to
+//destiny word bank
 wordLists.push(verbs);
 wordLists.push(locationsAndPlurals);
 
@@ -26,28 +26,31 @@ wordLists.push(locationsAndPlurals);
 // wordLists.push(firstNames);
 // wordLists.push(lastNames);
 
-//your weapon
+//weapon word bank
 wordLists.push(adjectives);
 wordLists.push(weapons);
 
-//special ability
+//ability word bank
 var combined1 = adjectives.concat(nouns);
 shuffleArray(combined1);
 wordLists.push(combined1);
 wordLists.push(abilities);
 
-//your companion
+//companion work bank
 wordLists.push(adjectives);
 wordLists.push(nouns);
 
-//your vehicle
+//vehicle word bank
 wordLists.push(adjectives);
 wordLists.push(vehicles);
 
-//your weakness
+//weakness word bank
 var combined2 = nouns.concat(weapons);
 shuffleArray(combined2);
 wordLists.push(locationsAndPlurals);
+combined2.forEach(function(word) {
+    pluralize(word); 
+});
 wordLists.push(combined2);
 
 //------------------------------Creating dom elements and storing them in list-------------------------------//
