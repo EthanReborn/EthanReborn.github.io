@@ -599,7 +599,7 @@ export const verbs = [
     ["help", 4000],
     ["vote for", 5000],
     ["become president of", 20000],
-    ["become leader of", 20000],
+    ["become the leader of", 20000],
     ["become king of", 21000],
     ["be a slave to", -50000],
     ["be enslaved by", -50000],
