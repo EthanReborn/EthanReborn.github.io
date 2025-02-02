@@ -540,7 +540,7 @@ function toggleSelected2() {
                 console.log("toggle pluralize hit"); 
                 let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
                 nextDivs[nextIndex - 1].textContent = oldText;
-                console.log(nextDivs[nextIndex - 1]);
+                console.log(nextDivs[nextIndex]);
             }
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
