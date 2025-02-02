@@ -1,4 +1,4 @@
-import {nouns, adjectives, verbs, locationsAndPlurals, weapons, vehicles} from './words.js'
+import {nouns, adjectives, verbs, locationsAndPlurals, abilities, weapons, vehicles} from './words.js'
 
 document.title = "destiny's handbook 2"
 
