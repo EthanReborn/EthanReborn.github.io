@@ -504,13 +504,6 @@ function toggleSelected1() {
                 box.classList.remove('fade-in-out');
             }, 100); // Match this with the animation duration in CSS (1s)
 
-            //pluralize at end
-            if(nextIndex >= nextDivs.length || wIndex >= wordLists.length){
-                let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
-                nextDivs[nextIndex - 1].textContent = oldText;
-                console.log(nextDivs[nextIndex - 1]);
-            }
-
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 850);
     }
@@ -537,14 +530,6 @@ function toggleSelected2() {
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
             }, 100); // Match this with the animation duration in CSS (1s)
-
-            //pluralize at end
-            if(nextIndex >= nextDivs.length || wIndex >= wordLists.length){
-                console.log("toggle pluralize hit"); 
-                let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
-                nextDivs[nextIndex - 1].textContent = oldText;
-                console.log(nextDivs[nextIndex]);
-            }
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 850);
