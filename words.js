@@ -208,7 +208,7 @@ export const nouns = [
     ["princess", 15000],
     ["prince", 14000],
     ["crusader", 17000],
-    ["parasite", -190000],
+    ["parasite", -100000],
     ["sith", 18000],
     ["smuggler", 16000],
     ["narcisist", -15000],
