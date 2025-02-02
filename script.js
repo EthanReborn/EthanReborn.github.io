@@ -922,6 +922,12 @@ function pluralize(word) {
     if(word == "jesus"){
         return "jesus"; 
     }
+    if(word == "gordon ramsay"){
+        return "gordon ramsay";
+    }
+    if(word == "guy"){
+        return "guys"; 
+    }
     else if(word[word.length -1] == "h" || word[word.length -1] == "o" || word[word.length -1] == "s"){
         return word += "es";
     }
