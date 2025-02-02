@@ -492,6 +492,7 @@ function toggleSelected1() {
             wIndex += 2;
             console.log("left word chosen")
 
+            //reposition score box
             let box = document.getElementById('score');
 
             // Apply fade-in-out animation
@@ -501,6 +502,13 @@ function toggleSelected1() {
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
             }, 100); // Match this with the animation duration in CSS (1s)
+
+            //pluralize at end
+            if(nextIndex >= nextDivs.length || wIndex >= wordLists.length){
+                let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
+                nextDivs[nextIndex - 1].textContent = oldText;
+                console.log(nextDivs[nextIndex - 1]);
+            }
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 850);
@@ -518,6 +526,7 @@ function toggleSelected2() {
             wIndex += 2;
             console.log("right word chosen")
 
+            //reposition score counter
             let box = document.getElementById('score');
 
             // Apply fade-in-out animation
@@ -527,6 +536,13 @@ function toggleSelected2() {
             setTimeout(() => {
                 box.classList.remove('fade-in-out');
             }, 100); // Match this with the animation duration in CSS (1s)
+
+            //pluralize at end
+            if(nextIndex >= nextDivs.length || wIndex >= wordLists.length){
+                let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
+                nextDivs[nextIndex - 1].textContent = oldText;
+                console.log(nextDivs[nextIndex - 1]);
+            }
 
             setTimeout(completedStep(nextDivs[nextIndex], wordLists[wIndex], wordLists[wIndex + 1]), 10);
         }, 850);
@@ -604,12 +620,12 @@ function completedStep(div, list1, list2) {
         //pluralize weaknesses
         // setTimeout( () =>
         // {
-            // let oldText = nextDivs[nextIndex - 1].textContent.concat("s");
-            // let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
-            // nextDivs[nextIndex - 1].textContent = oldText;
-            // console.log(nextDivs[nextIndex - 1]);
-            // nextDivs[nextIndex - 1].style.display='none';
-            // nextDivs[nextIndex - 1].style.display='block';
+        //     let oldText = nextDivs[nextIndex - 1].textContent.concat("s");
+        //     let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
+        //     nextDivs[nextIndex - 1].textContent = oldText;
+        //     console.log(nextDivs[nextIndex - 1]);
+        //     nextDivs[nextIndex - 1].style.display='none';
+        //     nextDivs[nextIndex - 1].style.display='block';
         // }, 10);
 
         //turn off hover and toggles for last words
@@ -678,11 +694,6 @@ function completedStep(div, list1, list2) {
         document.getElementById('main').style.visibility = "visible";
         document.getElementById('main').height = screen.height;
         document.getElementById('main').width = screen.width;
-
-        //pluralize second weakness
-        let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
-        nextDivs[nextIndex - 1].textContent = oldText;
-        console.log(nextDivs[nextIndex - 1]);
 
         return;
     }
