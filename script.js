@@ -60,7 +60,7 @@ div.setAttribute('class', 'stuff-box')
 var title = document.createElement('h2');
 title.textContent = "Destiny's Handbook 2";
 
-linebreak = document.createElement("br");
+var linebreak = document.createElement("br");
 
 var manual = document.createElement('p');
 manual.textContent = "click on changing words to select";
