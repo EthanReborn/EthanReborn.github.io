@@ -493,7 +493,7 @@ function toggleSelected1() {
         setTimeout( () => {
 
             //change you are a to you are "an" if first word starts with vowel
-            if (isVowel(nextDivs[1].textContent[nextDivs[1].textContent.length - 1]) && nextIndex === 0){
+            if (isVowel(nextDivs[1].textContent[0]) && nextIndex === 0){
                 nextDivs[0].textContent = "You Are an: ";
             }
 
@@ -528,7 +528,7 @@ function toggleSelected2() {
             console.log(nextDivs[1].textContent);
 
             //change you are a to you are "an" if first word starts with vowel
-            if (isVowel(nextDivs[1].textContent[nextDivs[1].textContent.length - 1]) && nextIndex === 0){
+            if (isVowel(nextDivs[1].textContent[0]) && nextIndex === 0){
                 nextDivs[0].textContent = "You Are an:";
             }
 
