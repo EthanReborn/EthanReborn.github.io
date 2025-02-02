@@ -525,6 +525,8 @@ function toggleSelected2() {
     if(selected1 && selected2) {
          setTimeout( () => {
 
+            console.log(nextDivs[nextIndex].textContent);
+
             //change you are a to you are "an" if first word starts with vowel
             if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 2]) && nextIndex === 0){
                 nextDivs[0].textContent = "You Are an:";
@@ -844,6 +846,7 @@ function saveTXT() {
 }
 
 function pluralize(word) {
+    word = word.toLowerCase(); 
     if(word == "xenomorph"){
         return "xenomorphs";
     }
@@ -891,6 +894,9 @@ function pluralize(word) {
     }
     if(word == "soap"){
         return "soap";
+    }
+    if(word == "iron man"){
+        return "iron man"; 
     }
     else if(word[word.length -1] == "h" || word[word.length -1] == "o" || word[word.length -1] == "s"){
         return word += "es";
