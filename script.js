@@ -525,7 +525,7 @@ function toggleSelected2() {
     if(selected1 && selected2) {
          setTimeout( () => {
 
-            console.log(nextDivs[nextIndex].textContent);
+            console.log(nextDivs[1].textContent);
 
             //change you are a to you are "an" if first word starts with vowel
             if (isVowel(nextDivs[1].textContent[nextDivs[1].textContent.length - 1]) && nextIndex === 0){
@@ -897,6 +897,15 @@ function pluralize(word) {
     }
     if(word == "iron man"){
         return "iron man"; 
+    }
+    if(word == "death ray"){
+        return "death rays";
+    }
+    if(word == "shrink ray"){
+        return "shrink rays";
+    }
+    if(word == "freeze ray"){
+        return "freeze rays";
     }
     else if(word[word.length -1] == "h" || word[word.length -1] == "o" || word[word.length -1] == "s"){
         return word += "es";
