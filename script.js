@@ -494,8 +494,8 @@ function toggleSelected1() {
 
             console.log(nextDivs[nextIndex].textContent);
 
-            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1])){
-
+            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]) && nextIndex === 0){
+                nextDivs[0].textContent = "You Are an: ";
             }
 
             nextIndex += 3;
@@ -525,6 +525,11 @@ function toggleSelected2() {
     //how long to wait until next section 
     if(selected1 && selected2) {
          setTimeout( () => {
+
+            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]) && nextIndex === 0){
+                nextDivs[0].textContent = "You Are an: ";
+            }
+
             nextIndex += 3;
             wIndex += 2;
             console.log("right word chosen")
