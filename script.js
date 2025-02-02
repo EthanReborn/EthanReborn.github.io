@@ -491,6 +491,13 @@ function toggleSelected1() {
     //how long to wait until next section 
     if(selected1 && selected2){
         setTimeout( () => {
+
+            console.log(nextDivs[nextIndex].textContent);
+
+            if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1])){
+
+            }
+
             nextIndex += 3;
             wIndex += 2;
             console.log("left word chosen")
@@ -877,6 +884,9 @@ function pluralize(word) {
     if(word == "sleigh"){
         return "sleighs";
     }
+    if(word == "soap"){
+        return "soap";
+    }
     else if(word[word.length -1] == "h" || word[word.length -1] == "o" || word[word.length -1] == "s"){
         return word += "es";
     }
@@ -898,6 +908,7 @@ function resetPage() {
 
     shuffleAll();
 
+    //score
     nextDivs = [];
     nextIndex = 0;
     wIndex = 0;
@@ -1104,5 +1115,11 @@ function resetPage() {
     //start random wheel for first question
     leftWordLooper(adjectives, 'adj1');
     rightWordLooper(nouns, 'noun1');
+}
 
+function isVowel(letter) {
+    // Convert letter to lowercase to handle both uppercase and lowercase letters
+    letter = letter.toLowerCase();
+    // Check if the letter is one of the vowels
+    return ['a', 'e', 'i', 'o', 'u'].includes(letter);
 }
