@@ -492,6 +492,7 @@ function toggleSelected1() {
     if(selected1 && selected2){
         setTimeout( () => {
 
+            //change you are a to you are "an" if first word starts with vowel
             if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 2]) && nextIndex === 0){
                 nextDivs[0].textContent = "You Are an: ";
             }
@@ -524,10 +525,7 @@ function toggleSelected2() {
     if(selected1 && selected2) {
          setTimeout( () => {
 
-            console.log(nextDivs[nextIndex].textContent);
-            console.log(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]);
-            console.log(isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 1]));
-
+            //change you are a to you are "an" if first word starts with vowel
             if (isVowel(nextDivs[nextIndex].textContent[nextDivs[nextIndex].textContent.length - 2]) && nextIndex === 0){
                 nextDivs[0].textContent = "You Are an:";
             }
@@ -926,6 +924,7 @@ function resetPage() {
     // document.body.remove();
     div.replaceChildren();
 
+    youAreDiv.textContent = "You are a:";
     nextDivs.push(youAreDiv);
 
 
