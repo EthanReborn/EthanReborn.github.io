@@ -48,8 +48,8 @@ wordLists.push(vehicles);
 var combined2 = nouns.concat(weapons);
 shuffleArray(combined2);
 wordLists.push(locationsAndPlurals);
-combined2.forEach(function(word) {
-    pluralize(word); 
+combined2.forEach(function(word, index) {
+    combined2[index] = pluralize(word);
 });
 wordLists.push(combined2);
 
