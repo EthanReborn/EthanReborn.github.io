@@ -472,6 +472,13 @@ function rightWordLooper(inputList, tagName) {
                 scoreBox.className = "score-box-green"; 
             }
 
+             //pluralize at end
+             if(nextIndex >= nextDivs.length || wIndex >= wordLists.length){
+                let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
+                nextDivs[nextIndex - 1].textContent = oldText;
+                console.log(nextDivs[nextIndex - 1]);
+            }
+
             animateScoreUpdate(document.getElementById('score'), score, target, 800); 
             showScoreChange(wordValue);
             score = target; 
