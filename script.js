@@ -45,12 +45,14 @@ wordLists.push(adjectives);
 wordLists.push(vehicles);
 
 //weakness word bank
-var combined2 = nouns.concat(weapons);
+var combined2 = nouns.map(item => [...item]).concat(weapons.map(item => [...item])); //deep copy
 shuffleArray(combined2);
-wordLists.push(locationsAndPlurals);
+
 combined2.forEach(function(item, index) {
     combined2[index][0] = pluralize(item[0]); // Modify the word (first element) of each sub-array
 });
+
+wordLists.push(locationsAndPlurals);
 wordLists.push(combined2);
 
 //------------------------------Creating dom elements and storing them in list-------------------------------//
