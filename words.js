@@ -548,6 +548,7 @@ export const adjectives = [
     ["unlikeable", -12000],
     ["epic", 200000],
     ["legendary", 250000],
+    ["yummy", -10000],
 ];
 
 export const verbs = [

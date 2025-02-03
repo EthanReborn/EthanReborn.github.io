@@ -928,6 +928,9 @@ function pluralize(word) {
     if(word == "guy"){
         return "guys"; 
     }
+    if(word == "steve jobs"){
+        return "steve jobs"; 
+    }
     else if(word[word.length -1] == "h" || word[word.length -1] == "o" || word[word.length -1] == "s"){
         return word += "es";
     }
