@@ -230,8 +230,18 @@ export const nouns = [
     ["nascar driver", 10000],
     ["limo driver", -3000],
     ["taxi driver", -5000],
-    ["hobo", -100000],
+    ["hobo", -90000],
     ["statue", -1000],
+    ["addict", -75000],
+    ["drug-addict", -100000],
+    ["farmer", 10000],
+    ["sex-addict", -50000],
+    ["special-agent", 15000],
+    ["news anchor", 5000],
+    ["reporter", 3000],
+    ["super villain", 40000],
+    ["russian", 10000],
+    ["surfer", 5000],
 ];
 
 export const adjectives = [ 
@@ -295,7 +305,7 @@ export const adjectives = [
     ["unrelenting", 16000],
     ["hungry", -11000],
     ["short", -9000],
-    ["disgusting", -150000],
+    ["disgusting", -50000],
     ["robotic", 10000],
     ["retarded", -60000],
     ["stupid", -50000],
@@ -549,11 +559,25 @@ export const adjectives = [
     ["epic", 200000],
     ["legendary", 250000],
     ["yummy", -10000],
+    ["styrofoam", -30000],
+    ["tin", -1000],
+    ["brick", 5000],
+    ["stretchy", 1000],
+    ["spandex", -5000],
+    ["magical", 20000],
+    ["farting", -30000],
+    ["laughing", 1000],
+    ["titanium", 50000],
+    ["special", 10000],
+    ["weak", -30000],  
+    ["russian", 10000],
+    ["mexican", 10000],
+    ["asian", 10000],
 ];
 
 export const verbs = [
     ["kill", 15000],
-    ["destroy", 20000],
+    ["destroy", 25000],
     ["invade", 17000],
     ["pulverize", 25000],
     ["disintegrate", 21000],
@@ -842,6 +866,8 @@ export const weapons = [
     ["wings", 18000],
     ["javelin", 9000],
     ["gloves", -5000],
+    ["pepper-spray", 5000],
+    ["taser", 15000],
 ];
 
 export const locationsAndPlurals = [
@@ -1188,6 +1214,12 @@ export const abilities = [
     ["stealth", 17000],
     ["tornado", 19000],
     ["yodeling", -8000],
+    ["aura", 10000],
+    ["parkour", 15000],
+    ["explosion", 45000],
+    ["prediction", 20000],
+    ["sense", 10000],
+    ["sensing", 10000],
 ];  
 
 export const vehicles = [
@@ -1246,4 +1278,6 @@ export const vehicles = [
     ["four-wheeler", 5000],
     ["taxi", 5000],
     ["skateboard", 1000],
+    ["surfboard", 5000],
+    ["water-skis", 5000],
 ];
