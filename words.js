@@ -1072,7 +1072,7 @@ export const locationsAndPlurals = [
     ["Naboo", 18000],
     ["vloggers", -13000],
     ["the empire", 17000],
-    ["empires", 15000],
+    ["empires", 50000],
     ["the statue of liberty", 17000],
     ["money", 8000],
     ["fort knox", 14000],
