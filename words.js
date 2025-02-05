@@ -7,10 +7,8 @@ export const nouns = [
     ["vampire", 12000],
     ["vulture", -7000],
     ["tri-borg", 50000],
-    ["Bunny", -3000],
-    ["U.S.S Arizona", 10000],
-    ["Aircraft Carrier", 14000],
-    ["Retard", -100000],
+    ["bunny", -3000],
+    ["retard", -100000],
     ["Grave Digger", 17000],
     ["Tom Cruise", 6000],
     ["Duracell Battery", -15000],
@@ -1376,6 +1374,7 @@ export const abilities = [
     ["fart", -20000],
     ["abilities", 15000],
     ["hiding", -15000],
+    ["charisma", 15000],
 ];  
 
 export const vehicles = [
@@ -1445,4 +1444,6 @@ export const vehicles = [
     ["submarine", 5000],
     ["tractor", 5000],
     ["bulldozer", 10000],
+    ["U.S.S Arizona", 10000],
+    ["Aircraft Carrier", 14000],
 ];
