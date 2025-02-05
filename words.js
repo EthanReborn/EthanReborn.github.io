@@ -643,6 +643,8 @@ export const adjectives = [
     ["cast-iron", 5000],
     ["constipated", -26000],
     ["turbo", 15000],
+    ["straight-up", 10000],
+    ["petrified", -10000],
 ];
 
 export const verbs = [
