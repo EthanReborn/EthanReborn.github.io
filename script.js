@@ -680,8 +680,8 @@ function completedStep(div, list1, list2) {
         return;
     }
 
-    //shuffle between each second
-    shuffleAll();
+    //shuffle between each step
+    //shuffleAll();
 
     let space = document.createElement('p');
     space.textContent = "\t";
@@ -954,7 +954,7 @@ function resetPage() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
-    shuffleAll();
+    //shuffleAll();
 
     //score
     nextDivs = [];
