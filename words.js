@@ -623,7 +623,7 @@ export const adjectives = [
     ["cowboy", 10000],
     ["ragged", -2000],
     ["ultra", 75000],
-    ["heavily armed", 35000]
+    ["heavily armed", 35000],
     ["unstable", -5000],
     ["jolly", 10000],
     ["radioactive", 15000],
