@@ -169,8 +169,8 @@ export const nouns = [
     ["fighter pilot", 20000],
     ["transformer", 20000],
     ["lover", 16000],
-    ["Optimus Prime", 20000],
-    ["Batman", 20000],
+    ["Optimus Prime", 100000],
+    ["Batman", 75000],
     ["prosecutor", -8000],
     ["priest", 8000],
     ["iron man", 20000],
@@ -1237,6 +1237,7 @@ export const abilities = [
     ["sensing", 10000],
     ["sonic boom", 30000],
     ["super speed", 20000],
+    ["fart", -20000],
 ];  
 
 export const vehicles = [
