@@ -264,6 +264,8 @@ export const nouns = [
     ["vampire hunter", 30000],
     ["baseball player", 5000],
     ["NBA player", 5000],
+    ["boss", 15000],
+    ["bartender", 2000],
 ];
 
 export const adjectives = [ 
@@ -986,6 +988,11 @@ export const weapons = [
     ["parachute", 5000],
     ["buzz saw", 7500],
     ["utility belt", 20000],
+    ["sharpie", -5000],
+    ["batarang", 15000],
+    ["glasses", -5000],
+    ["glue", -5000],
+    ["detonator", 10000],
 ];
 
 export const locationsAndPlurals = [
@@ -1377,6 +1384,9 @@ export const abilities = [
     ["abilities", 15000],
     ["hiding", -15000],
     ["charisma", 15000],
+    ["kicking", 5000],
+    ["punching", 5000],
+    ["slapping", -2000],
 ];  
 
 export const vehicles = [
