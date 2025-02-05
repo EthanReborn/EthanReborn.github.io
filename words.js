@@ -1132,7 +1132,7 @@ export const locationsAndPlurals = [
     ["poor people", -20000],
     ["the chinese", 7000],
     ["the jedi", 19000],
-    ["the dark side", 18000],
+    ["the dark side", 28000],
     ["sexists", -25000],
     ["black holes", 20000],
     ["prison", -15000],
@@ -1448,4 +1448,5 @@ export const vehicles = [
     ["bulldozer", 10000],
     ["U.S.S Arizona", 10000],
     ["Aircraft Carrier", 18000],
+    ["mars rover", 12000],
 ];
