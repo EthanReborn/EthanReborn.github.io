@@ -334,6 +334,7 @@ title {
 
 .fade-in-out {
     animation: fade-in-out 1.5s ease-in-out;
+	font-size: 25px;
 }
 
 @keyframes fade-in-out {
