@@ -264,6 +264,8 @@ export const nouns = [
     ["Richard Nixon", -25000],
     ["president", 50000],
     ["vampire hunter", 30000],
+    ["baseball player", 5000],
+    ["NBA player", 5000],
 ];
 
 export const adjectives = [ 
@@ -660,7 +662,8 @@ export const adjectives = [
     ["sweating", -5000],
     ["sweaty", -5000],
     ["synthetic", -5000],
-    ["frantic" -5000],
+    ["frantic", -5000],
+    ["devastating", 20000],
 ];
 
 export const verbs = [
