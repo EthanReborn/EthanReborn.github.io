@@ -662,6 +662,7 @@ export const adjectives = [
     ["synthetic", -5000],
     ["frantic", -5000],
     ["devastating", 20000],
+    ["efficient", 10000],
 ];
 
 export const verbs = [
