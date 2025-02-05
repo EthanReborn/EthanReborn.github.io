@@ -573,6 +573,8 @@ export const adjectives = [
     ["russian", 10000],
     ["mexican", 10000],
     ["asian", 10000],
+    ["badass", 50000],
+    ["lightning", 55000],
 ];
 
 export const verbs = [
@@ -868,6 +870,7 @@ export const weapons = [
     ["gloves", -5000],
     ["pepper-spray", 5000],
     ["taser", 15000],
+    ["tape measure", -5000],
 ];
 
 export const locationsAndPlurals = [
@@ -1074,6 +1077,7 @@ export const locationsAndPlurals = [
     ["trash cans", -5000],
     ["STDs", -5000],
     ["diseases", -5000],
+    ["furniture", -5000],
 ];
 
 export const abilities = [
