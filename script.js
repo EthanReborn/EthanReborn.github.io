@@ -585,26 +585,11 @@ function animateScoreUpdate(element, startValue, targetValue, duration) {
     requestAnimationFrame(updateScore);
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 function completedStep(div, list1, list2) {
 
     //if end of game, end of game cleanup
     if(nextIndex >= nextDivs.length || wIndex >= wordLists.length){
         console.log('create button');
-
-        //pluralize weaknesses
-        // setTimeout( () =>
-        // {
-        //     let oldText = nextDivs[nextIndex - 1].textContent.concat("s");
-        //     let oldText = pluralize(nextDivs[nextIndex - 1].textContent);
-        //     nextDivs[nextIndex - 1].textContent = oldText;
-        //     console.log(nextDivs[nextIndex - 1]);
-        //     nextDivs[nextIndex - 1].style.display='none';
-        //     nextDivs[nextIndex - 1].style.display='block';
-        // }, 10);
 
         //turn off hover and toggles for last words
         nextDivs[nextDivs.length -1].onclick = function () { console.log('dummy function'); }
@@ -762,12 +747,6 @@ function completedStep(div, list1, list2) {
 
     //apply two column container (all other containers)
     }else{
-        // //document.getElementById('main').appendChild(document.getElementById('score'));
-        // const box = document.getElementById('score');
-
-        // // Slide the scoreBox down when needed
-        // box.classList.add('slide-down');
-
         console.log(nextDivs); 
         container.appendChild(nextDivs[nextIndex + 1]);
         container.appendChild(space);
