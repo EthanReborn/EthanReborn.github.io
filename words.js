@@ -534,7 +534,7 @@ export const adjectives = [
     ["sick", -16000],
     ["cardboard", -20000],
     ["nebula", 20000],
-    ["death", -17000],
+    ["death", 17000],
     ["drug-addicted", -90000],
     ["narcissistic", -70000],
     ["polished", 6000],
@@ -575,6 +575,8 @@ export const adjectives = [
     ["asian", 10000],
     ["badass", 50000],
     ["lightning", 55000],
+    ["experimental", -10000],
+    ["teenage", -5000],
 ];
 
 export const verbs = [
@@ -855,8 +857,8 @@ export const weapons = [
     ["guillotine", 10000],
     ["sky beam", 40000],
     ["chemicals", 5000],
-    ["toaster", -100000],
-    ["oven mitt", -150000],
+    ["toaster", -50000],
+    ["oven mitt", -50000],
     ["magic", 50000],
     ["staff", 16000],
     ["shrink ray", 25000],
@@ -1224,6 +1226,8 @@ export const abilities = [
     ["prediction", 20000],
     ["sense", 10000],
     ["sensing", 10000],
+    ["sonic boom", 30000],
+    ["super speed", 20000],
 ];  
 
 export const vehicles = [
