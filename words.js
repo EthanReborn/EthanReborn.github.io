@@ -641,6 +641,7 @@ export const adjectives = [
     ["sinister", -30000],
     ["plastic-wrapped", -20000],
     ["cast-iron", 5000],
+    ["constipated", -26000],
 ];
 
 export const verbs = [
@@ -837,6 +838,7 @@ export const verbs = [
     ["jump on", -5000], 
     ["find the secret ingredient for", 50000],
     ["find the secret formula for", 40000],
+    ["throw up on", -10000],
 ];  
 
 export const weapons = [
