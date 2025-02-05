@@ -242,6 +242,8 @@ export const nouns = [
     ["super villain", 40000],
     ["russian", 10000],
     ["surfer", 5000],
+    ["pop star", 5000],
+    ["mermaid", 10000],
 ];
 
 export const adjectives = [ 
@@ -366,7 +368,7 @@ export const adjectives = [
     ["poisoned", -150000],
     ["frost", 7000],
     ["schizophrenic", -17000],
-    ["cursed", -16000],
+    ["cursed", -20000],
     ["genius", 20000],
     ["enchanted", 18000],
     ["bloody", 14000],
@@ -402,7 +404,7 @@ export const adjectives = [
     ["crying", -20000],
     ["affectionate", 12000],
     ["ceramic", -6000],
-    ["ultimate", 20000],
+    ["ultimate", 100000],
     ["supreme", 120000],
     ["deluxe", 20000],
     ["blazing", 19000],
@@ -577,6 +579,10 @@ export const adjectives = [
     ["lightning", 55000],
     ["experimental", -10000],
     ["teenage", -5000],
+    ["sonic", 20000],
+    ["horrifying", 50000],
+    ["techno", 5000],
+    ["technological", 10000],
 ];
 
 export const verbs = [
@@ -873,6 +879,7 @@ export const weapons = [
     ["pepper-spray", 5000],
     ["taser", 15000],
     ["tape measure", -5000],
+    ["book", -5000]
 ];
 
 export const locationsAndPlurals = [
@@ -883,7 +890,7 @@ export const locationsAndPlurals = [
     ["the World", 15000],
     ["The Universe", 20000],
     ["Helicopters", 8000],
-    ["Valhala", 20000],
+    ["Valhala", 50000],
     ["Heaven", 18000],
     ["Oceans", 16000],
     ["Vampires", 17000],
@@ -1078,8 +1085,10 @@ export const locationsAndPlurals = [
     ["wookies", 2000],
     ["trash cans", -5000],
     ["STDs", -5000],
-    ["diseases", -5000],
-    ["furniture", -5000],
+    ["diseases", -10000],
+    ["furniture", -10000],
+    ["grandmas", -5000],
+    ["grandpas", -5000],
 ];
 
 export const abilities = [
