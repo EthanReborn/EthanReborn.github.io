@@ -857,7 +857,7 @@ export const verbs = [
     ["ignore", -10000],
     ["jump off", -5000],
     ["jump on", -5000], 
-    ["find the secret ingredient for", 50000],
+    ["find the secret ingredient to", 50000],
     ["find the secret formula for", 40000],
     ["throw up on", -10000],
 ];  
@@ -1221,7 +1221,7 @@ export const locationsAndPlurals = [
     ["ska bands", 5000],
     ["rap music", 5000], 
     ["country music", 5000],
-    ["hell", -50000]
+    ["hell", -50000],
     ["legos", 5000],
     ["the titanic", 20000],
     ["the capitol", 5000],
