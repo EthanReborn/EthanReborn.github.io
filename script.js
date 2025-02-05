@@ -415,6 +415,8 @@ function leftWordLooper(inputList, tagName) {
     let index = 0
     let list = inputList;
 
+    console.log(inputList);
+
     function displayNextName() {
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
         document.getElementById(tagName).textContent = list[index][0];
@@ -449,6 +451,8 @@ function leftWordLooper(inputList, tagName) {
 function rightWordLooper(inputList, tagName) {
     let index = 0
     let list = inputList;
+
+    console.log(inputList);
 
     if(inputList == null){
         nextIndex += 3;

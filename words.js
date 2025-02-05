@@ -985,6 +985,7 @@ export const weapons = [
     ["frying pan", 5000],
     ["parachute", 5000],
     ["buzz saw", 7500],
+    ["utility belt", 20000],
 ];
 
 export const locationsAndPlurals = [
@@ -1198,7 +1199,7 @@ export const locationsAndPlurals = [
     ["the girl scouts", -10000],
     ["the produce section", -10000],
     ["grocery stores", -10000],
-    ["the hawaiiwan islands", 10000],
+    ["the hawaiian islands", 10000],
     ["the atmosphere", 1500],
     ["worm holes", 20000],
     ["the police", 10000], 
