@@ -415,8 +415,6 @@ function leftWordLooper(inputList, tagName) {
     let index = 0
     let list = inputList;
 
-    console.log(inputList);
-
     function displayNextName() {
         index = (index + 1) % list.length;  // Loop back to the beginning when reaching the end
         document.getElementById(tagName).textContent = list[index][0];
@@ -451,8 +449,6 @@ function leftWordLooper(inputList, tagName) {
 function rightWordLooper(inputList, tagName) {
     let index = 0
     let list = inputList;
-
-    console.log(inputList);
 
     if(inputList == null){
         nextIndex += 3;
@@ -681,12 +677,12 @@ function completedStep(div, list1, list2) {
     }
 
     //shuffle between each step
-    //shuffleAll();
+    shuffleAll();
 
     let space = document.createElement('p');
     space.textContent = "\t";
-    console.log(nextDivs.length);
-    console.log(nextIndex);
+    // console.log(nextDivs.length);
+    // console.log(nextIndex);
     space.style.display = "inline";
 
     //hard code "son of" based on last name
@@ -948,13 +944,12 @@ function pluralize(word) {
     }
 }
 
-
 function resetPage() {
 
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
-    //shuffleAll();
+    shuffleAll();
 
     //score
     nextDivs = [];
