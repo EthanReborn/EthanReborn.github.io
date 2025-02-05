@@ -262,7 +262,8 @@ export const nouns = [
     ["skydiver", 5000],
     ["street sweeper", -10000],
     ["Richard Nixon", -25000],
-    ["sweating", -5000],
+    ["president", 50000],
+    ["vampire hunter", 30000],
 ];
 
 export const adjectives = [ 
@@ -645,6 +646,21 @@ export const adjectives = [
     ["turbo", 15000],
     ["straight-up", 10000],
     ["petrified", -10000],
+    ["lonely", -5000],
+    ["socially awkward", -15000],
+    ["billion dollar", 40000],
+    ["million dollar", 30000],
+    ["$12", -10000],
+    ["seasick", -15000],
+    ["eldritch", 25000],
+    ["otherworldly", 10000],
+    ["spooky", 10000],
+    ["strange", -10000],
+    ["supernatural", 15000],
+    ["sweating", -5000],
+    ["sweaty", -5000],
+    ["synthetic", -5000],
+    ["frantic" -5000],
 ];
 
 export const verbs = [
@@ -966,6 +982,7 @@ export const weapons = [
     ["coffee mug", -9000],
     ["frying pan", 5000],
     ["parachute", 5000],
+    ["buzz saw", 7500],
 ];
 
 export const locationsAndPlurals = [
@@ -1204,6 +1221,7 @@ export const locationsAndPlurals = [
     ["hell", -50000]
     ["legos", 5000],
     ["the titanic", 20000],
+    ["the capitol", 5000],
 ];
 
 export const abilities = [
@@ -1422,4 +1440,6 @@ export const vehicles = [
     ["battleship", 25000],
     ["pony", -5000],
     ["submarine", 5000],
+    ["tractor", 5000],
+    ["bulldozer", 10000],
 ];
