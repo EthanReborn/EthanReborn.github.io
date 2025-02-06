@@ -881,6 +881,8 @@ export const verbs = [
     ["study", 5000],
     ["reinvent", 15000],
     ["cuddle with", -10000],
+    ["die by", -30000],
+    ["straight-up die by", -45000],
 ];  
 
 export const weapons = [
@@ -1423,8 +1425,6 @@ export const abilities = [
     ["graffiti", -10000],
     ["brain", 20000],
     ["camouflage", 15000],
-    ["die by", -30000],
-    ["straight-up die by", -45000],
 ];  
 
 export const vehicles = [
