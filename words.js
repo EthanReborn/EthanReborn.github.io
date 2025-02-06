@@ -266,6 +266,11 @@ export const nouns = [
     ["NBA player", 5000],
     ["boss", 15000],
     ["bartender", 2000],
+    ["D.J", -5000],
+    ["braniac", 20000],
+    ["german", 5000],
+    ["nicholas cage", 100000],
+    ["butler", -10000],
 ];
 
 export const adjectives = [ 
@@ -280,13 +285,13 @@ export const adjectives = [
     ["successful", 15000],
     ["zombie", 15000],
     ["genetic", 9000],
-    ["immortal", 20000],
+    ["immortal", 200000],
     ["disinfected", 3000],
     ["cyber", 17000],
     ["undead", 16000],
     ["lame", -15000],
     ["deaf", -13000],
-    ["immortal", 20000],
+    ["immortal", 100000],
     ["paper", -4000],
     ["slimy", -9000],
     ["pissed off", 8000],
@@ -296,7 +301,7 @@ export const adjectives = [
     ["sky", 17000],
     ["earth", 16000],
     ["fire", 15000],
-    ["invincible", 100000],
+    ["invincible", 250000],
     ["weird", -8000],
     ["night", 12000],
     ["smoke", 18000],
@@ -668,6 +673,14 @@ export const adjectives = [
     ["hidden", 1000],
     ["disguised", 5000],
     ["acid", 10000],
+    ["cement", 10000],
+    ["high", -20000],
+    ["cave", -10000],
+    ["incredible", 75000],
+    ["german", 5000],
+    ["camouflaged", 15000],
+    ["camo", 15000],
+    ["humble", 10000],
 ];
 
 export const verbs = [
@@ -865,6 +878,9 @@ export const verbs = [
     ["find the secret ingredient to", 50000],
     ["find the secret formula for", 40000],
     ["throw up on", -10000],
+    ["study", 5000],
+    ["reinvent", 15000],
+    ["cuddle with", -10000],
 ];  
 
 export const weapons = [
@@ -996,6 +1012,12 @@ export const weapons = [
     ["glasses", -5000],
     ["glue", -5000],
     ["detonator", 10000],
+    ["peg leg", -4000],
+    ["drill", 5000],
+    ["treasure chest", 25000],
+    ["bottle rocket", -2000],
+    ["nails", 5000],
+    ["screw-driver", -5000],
 ];
 
 export const locationsAndPlurals = [
@@ -1235,6 +1257,14 @@ export const locationsAndPlurals = [
     ["legos", 5000],
     ["the titanic", 20000],
     ["the capitol", 5000],
+    ["kindergarten", 5000],
+    ["pre-school", 5000],
+    ["business meetings", 5500],
+    ["hamsters", -5000],
+    ["movies", 5000],
+    ["santa claus", 20000],
+    ["nicholas cage", 50000],
+    ["john lennon", 25000],
 ];
 
 export const abilities = [
@@ -1390,6 +1420,11 @@ export const abilities = [
     ["kicking", 5000],
     ["punching", 5000],
     ["slapping", -2000],
+    ["graffiti", -10000],
+    ["brain", 20000],
+    ["camouflage", 15000],
+    ["die by", -30000],
+    ["straight-up die by", -45000],
 ];  
 
 export const vehicles = [
@@ -1462,4 +1497,7 @@ export const vehicles = [
     ["U.S.S Arizona", 10000],
     ["Aircraft Carrier", 18000],
     ["mars rover", 12000],
+    ["alpaca", 5000],
+    ["lama", 6000],
+    ["trampoline", -5000],
 ];
