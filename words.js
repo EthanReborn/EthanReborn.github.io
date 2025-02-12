@@ -956,6 +956,7 @@ export const verbs = [
     ["chop", 5000],
     ["audit", -5000],
     ["lie about", -5000],
+    ["get drunk with", -10000],
 ];  
 
 export const weapons = [
