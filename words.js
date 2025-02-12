@@ -283,6 +283,10 @@ export const nouns = [
     ["eagle", 10000],
     ["flute player", -1200],
     ["garbage man", -1000],
+    ["boy", -5000],
+    ["girl", -5000],
+    ["dinosaur", 25000],
+    ["gandalf", 50000],
 ];
 
 export const adjectives = [ 
@@ -708,6 +712,12 @@ export const adjectives = [
     ["prime", 20000],
     ["garbage", -20000],
     ["dancing", 5500],
+    ["speedy", 10000],
+    ["alpha", 10000],
+    ["beta", -10000],
+    ["steam-powered", 10000],
+    ["pre-historic", 15000],
+    ["sewer", -25000],
 ];
 
 export const verbs = [
@@ -912,6 +922,13 @@ export const verbs = [
     ["straight-up die by", -45000],
     ["yell about", -10000],
     ["sing about", -5000],
+    ["obliterate", 55000],
+    ["reconstruct", 25000],
+    ["do plastic surgery on", 10000],
+    ["expose", 25000],
+    ["hunt down", 30000],
+    ["hunt", 30000],
+    ["coup", 5000],
 ];  
 
 export const weapons = [
@@ -1060,6 +1077,8 @@ export const weapons = [
     ["booby-trap", 15000],
     ["sleeping pills", 5000],
     ["chloroform", 11000],
+    ["flare gun", 5000],
+    ["torch", 5000],
 ];
 
 export const locationsAndPlurals = [
@@ -1308,6 +1327,15 @@ export const locationsAndPlurals = [
     ["nicholas cage", 50000],
     ["john lennon", 25000],
     ["the mona lisa", 25000],
+    ["society", 30000],
+    ["the cayman islands", 8000],
+    ["indian food", -5000],
+    ["asian food", -5000],
+    ["mexican food", -5000],
+    ["the jungle", 10000],
+    ["the NFL", 10000],
+    ["the NBA", 10000],
+    ["weight loss pills", -5000],
 ];
 
 export const abilities = [
@@ -1349,7 +1377,7 @@ export const abilities = [
     ["maturity", 12000],
     ["patience", 10000],
     ["perseverance", 15000],
-    ["power", 19000],
+    ["power", 30000],
     ["sanity", 11000],
     ["self-control", 17000],
     ["sensitivity", 7000],
@@ -1474,6 +1502,11 @@ export const abilities = [
     ["dancing", -5000],
     ["imagination", -11000],
     ["sleeping", -20000],
+    ["whispering", -10000],
+    ["tunneling", 5000],
+    ["digging", 5000],
+    ["teeth", -5000],
+    ["forehead", -10000],
 ];  
 
 export const vehicles = [
