@@ -296,6 +296,16 @@ export const nouns = [
     ["fairy-godmother", 15000],
     ["giant", 20000],
     ["hamster", -5000],
+    ["yeti", 25000],
+    ["bigfoot", 20000],
+    ["stoner", -15000],
+    ["scuba diver", 5000],
+    ["stalker", -25000],
+    ["fry cook", -15000],
+    ["poltergeist", 20000],
+    ["specter", 20000],
+    ["hell diver", 30000],
+    ["hit man", 30000],
 ];
 
 export const adjectives = [ 
@@ -738,6 +748,12 @@ export const adjectives = [
     ["failed", -50000],
     ["narcoleptic", -10000],
     ["passed-out", -20000],
+    ["white", 0],
+    ["sucky", -20000],
+    ["boneless", -15000],
+    ["nightmarish", 25000],
+    ["frightening", 15000],
+    ["scuba", 5000],
 ];
 
 export const verbs = [
@@ -957,6 +973,8 @@ export const verbs = [
     ["audit", -5000],
     ["lie about", -5000],
     ["get drunk with", -10000],
+    ["take", 20000],
+    ["replace", 10000],
 ];  
 
 export const weapons = [
@@ -1372,6 +1390,7 @@ export const locationsAndPlurals = [
     ["tide pods", 5000],
     ["ink cartridges", 5000],
     ["computers", 8000],
+    ["the underworld", 50000],
 ];
 
 export const abilities = [
