@@ -295,6 +295,7 @@ export const nouns = [
     ["nerd", 5000],
     ["fairy-godmother", 15000],
     ["giant", 20000],
+    ["hamster", -5000],
 ];
 
 export const adjectives = [ 
@@ -730,6 +731,13 @@ export const adjectives = [
     ["farm", 10000],
     ["washed-up", -17000],
     ["confused", -10000],
+    ["silver", 10000],
+    ["vintage", 5000],
+    ["icy", 5000],
+    ["doomed", -50000],
+    ["failed", -50000],
+    ["narcoleptic", -10000],
+    ["passed-out", -20000],
 ];
 
 export const verbs = [
@@ -943,6 +951,9 @@ export const verbs = [
     ["coup", 5000],
     ["write about", -5000],
     ["talk trash to", -5000],
+    ["doom", 25000],
+    ["karate chop", 10000],
+    ["chop", 5000],
 ];  
 
 export const weapons = [
@@ -1094,6 +1105,7 @@ export const weapons = [
     ["flare gun", 5000],
     ["torch", 5000],
     ["bear trap", 5000],
+    ["chopsticks", -5000],
 ];
 
 export const locationsAndPlurals = [
@@ -1353,6 +1365,9 @@ export const locationsAndPlurals = [
     ["weight loss pills", -5000],
     ["nuclear power plants", 15000],
     ["steroids", 5000],
+    ["the cartel", 10000],
+    ["tide pods", 5000],
+    ["ink cartridges", 5000],
 ];
 
 export const abilities = [
@@ -1603,4 +1618,5 @@ export const vehicles = [
     ["stroller", -10000],
     ["segway", 2500],
     ["hover shoes", 5500],
+    ["tow truck", 2000],
 ];
