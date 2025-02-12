@@ -34,8 +34,8 @@ export const nouns = [
     ["anti-christ", 25000],
     ["minion", -18000],
     ["jesus", 20000],
-    ["god", 20000],
-    ["titan", 19000],
+    ["god", 85000],
+    ["titan", 55000],
     ["ogre", 14000],
     ["cyclops", 13000],
     ["centaur", 11000],
@@ -178,7 +178,7 @@ export const nouns = [
     ["pope", 16000],
     ["buddha", 20000],
     ["predator", 19000],
-    ["barbarian", 17000],
+    ["barbarian", 19000],
     ["war lord", 50000],
     ["Steve Jobs", 15000],
     ["eskimo", 7000],
@@ -271,6 +271,18 @@ export const nouns = [
     ["german", 5000],
     ["nicholas cage", 100000],
     ["butler", -10000],
+    ["beggar", -25000],
+    ["rapper", 5000],
+    ["painter", 1200],
+    ["walrus", 5000],
+    ["zebra", 5000],
+    ["wart hog", -10000],
+    ["kleptomaniac", -20000],
+    ["prime minister", 15000],
+    ["programmer", 15000],
+    ["eagle", 10000],
+    ["flute player", -1200],
+    ["garbage man", -1000],
 ];
 
 export const adjectives = [ 
@@ -681,6 +693,21 @@ export const adjectives = [
     ["camouflaged", 15000],
     ["camo", 15000],
     ["humble", 10000],
+    ["cheese", -10000],
+    ["rubber", -5000],
+    ["web", 5500],
+    ["indestructible", 300000],
+    ["hardened", 18000],
+    ["kevlar", 50000],
+    ["jungle", 10000],
+    ["tropical", 8000],
+    ["forest", 7000],
+    ["pink", -8000],
+    ["awesome", 25000],
+    ["spectacular", 30000],
+    ["prime", 20000],
+    ["garbage", -20000],
+    ["dancing", 5500],
 ];
 
 export const verbs = [
@@ -883,6 +910,8 @@ export const verbs = [
     ["cuddle with", -10000],
     ["die by", -30000],
     ["straight-up die by", -45000],
+    ["yell about", -10000],
+    ["sing about", -5000],
 ];  
 
 export const weapons = [
@@ -891,7 +920,7 @@ export const weapons = [
     ["sword", 15000],
     ["spear", 14000],
     ["ray gun", 16000],
-    ["nuclear bomb", 100000],
+    ["nuclear bomb", 250000],
     ["bomb", 9000],
     ["rifle", 8000],
     ["pistol", 50000],
@@ -1010,7 +1039,7 @@ export const weapons = [
     ["buzz saw", 7500],
     ["utility belt", 20000],
     ["sharpie", -5000],
-    ["batarang", 15000],
+    ["batarang", 25000],
     ["glasses", -5000],
     ["glue", -5000],
     ["detonator", 10000],
@@ -1020,6 +1049,17 @@ export const weapons = [
     ["bottle rocket", -2000],
     ["nails", 5000],
     ["screw-driver", -5000],
+    ["crowbar", 15000],
+    ["molotov cocktail", 17000],
+    ["sunglasses", -5000],
+    ["sticky bomb", 9000],
+    ["hammer", 8000],
+    ["sledge hammer", 15000],
+    ["cannon", 20000],
+    ["cutlass", 10000],
+    ["booby-trap", 15000],
+    ["sleeping pills", 5000],
+    ["chloroform", 11000],
 ];
 
 export const locationsAndPlurals = [
@@ -1267,6 +1307,7 @@ export const locationsAndPlurals = [
     ["santa claus", 20000],
     ["nicholas cage", 50000],
     ["john lennon", 25000],
+    ["the mona lisa", 25000],
 ];
 
 export const abilities = [
@@ -1425,6 +1466,14 @@ export const abilities = [
     ["graffiti", -10000],
     ["brain", 20000],
     ["camouflage", 15000],
+    ["hand", -6000],
+    ["foot", -8000],
+    ["moonwalk", 5000],
+    ["crabwalk", -5000],
+    ["dance", -5000],
+    ["dancing", -5000],
+    ["imagination", -11000],
+    ["sleeping", -20000],
 ];  
 
 export const vehicles = [
@@ -1500,4 +1549,8 @@ export const vehicles = [
     ["alpaca", 5000],
     ["lama", 6000],
     ["trampoline", -5000],
+    ["dirt bike", 10000],
+    ["stroller", -10000],
+    ["segway", 2500],
+    ["hover shoes", 5500],
 ];
