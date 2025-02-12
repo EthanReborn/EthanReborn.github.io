@@ -954,6 +954,8 @@ export const verbs = [
     ["doom", 25000],
     ["karate chop", 10000],
     ["chop", 5000],
+    ["audit", -5000],
+    ["lie about", -5000],
 ];  
 
 export const weapons = [
@@ -1368,6 +1370,7 @@ export const locationsAndPlurals = [
     ["the cartel", 10000],
     ["tide pods", 5000],
     ["ink cartridges", 5000],
+    ["computers", 8000],
 ];
 
 export const abilities = [
