@@ -34,7 +34,7 @@ export const nouns = [
     ["anti-christ", 25000],
     ["minion", -18000],
     ["jesus", 20000],
-    ["god", 85000],
+    ["god", 90000],
     ["titan", 55000],
     ["ogre", 14000],
     ["cyclops", 13000],
@@ -165,7 +165,7 @@ export const nouns = [
     ["frenchman", -6000],
     ["sailor", 14000],
     ["fighter pilot", 20000],
-    ["transformer", 20000],
+    ["transformer", 35000],
     ["lover", 16000],
     ["Optimus Prime", 100000],
     ["Batman", 75000],
@@ -287,6 +287,14 @@ export const nouns = [
     ["girl", -5000],
     ["dinosaur", 25000],
     ["gandalf", 50000],
+    ["emperor", 50000],
+    ["punk", -5000],
+    ["freddy krueger", 20000],
+    ["michael myers", 20000],
+    ["chucky", 10000],
+    ["nerd", 5000],
+    ["fairy-godmother", 15000],
+    ["giant", 20000],
 ];
 
 export const adjectives = [ 
@@ -402,7 +410,7 @@ export const adjectives = [
     ["rusty", -15000],
     ["collapsing", -16000],
     ["broken-down", -120000],
-    ["exploded", -40000],
+    ["exploded", -50000],
     ["dying", -50000],
     ["brave", 19000],
     ["lava", 35000],
@@ -483,7 +491,7 @@ export const adjectives = [
     ["glistening", 6000],
     ["gruesome", -17000],
     ["godly", 80000],
-    ["godlike", 50000],
+    ["godlike", 80000],
     ["generous", 20000],
     ["heroic", 30000],
     ["hunky", 15000],
@@ -718,6 +726,10 @@ export const adjectives = [
     ["steam-powered", 10000],
     ["pre-historic", 15000],
     ["sewer", -25000],
+    ["country", 10000],
+    ["farm", 10000],
+    ["washed-up", -17000],
+    ["confused", -10000],
 ];
 
 export const verbs = [
@@ -929,6 +941,8 @@ export const verbs = [
     ["hunt down", 30000],
     ["hunt", 30000],
     ["coup", 5000],
+    ["write about", -5000],
+    ["talk trash to", -5000],
 ];  
 
 export const weapons = [
@@ -1079,6 +1093,7 @@ export const weapons = [
     ["chloroform", 11000],
     ["flare gun", 5000],
     ["torch", 5000],
+    ["bear trap", 5000],
 ];
 
 export const locationsAndPlurals = [
@@ -1336,6 +1351,8 @@ export const locationsAndPlurals = [
     ["the NFL", 10000],
     ["the NBA", 10000],
     ["weight loss pills", -5000],
+    ["nuclear power plants", 15000],
+    ["steroids", 5000],
 ];
 
 export const abilities = [
