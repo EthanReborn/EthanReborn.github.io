@@ -306,6 +306,10 @@ export const nouns = [
     ["specter", 20000],
     ["hell diver", 30000],
     ["hit man", 30000],
+    ["bastard", -7000],
+    ["ghost-buster", 15000],
+    ["dumbass", -22000],
+    ["paladin", 10000],
 ];
 
 export const adjectives = [ 
@@ -404,7 +408,7 @@ export const adjectives = [
     ["mecha", 20000],
     ["mega", 18000],
     ["infected", -17000],
-    ["colossal", 19000],
+    ["colossal", 25000],
     ["female", 5000],
     ["male", 4000],
     ["fast", 18000],
@@ -754,6 +758,17 @@ export const adjectives = [
     ["nightmarish", 25000],
     ["frightening", 15000],
     ["scuba", 5000],
+    ["psychic", 20000],
+    ["scottish", 1000],
+    ["irish", 1000],
+    ["space", 15000],
+    ["bastard", 5000],
+    ["damned", -20000],
+    ["voodoo", 9000],
+    ["goth", 5000],
+    ["emo", 5000],
+    ["basic", -7000],
+    ["fresh", 9900],
 ];
 
 export const verbs = [
@@ -975,6 +990,18 @@ export const verbs = [
     ["get drunk with", -10000],
     ["take", 20000],
     ["replace", 10000],
+    ["send hate mail to", 10000],
+    ["worship", -10000],
+    ["maim", 10000],
+    ["get maimed by", -10000],
+    ["frame", 10000],
+    ["get roofied by", -20000],
+    ["shred", 15000],
+    ["dunk on", 10000],
+    ["get dunked on by", -10000],
+    ["enchant", 10000],
+    ["incinerate", 20000],
+    ["damn", 35000],
 ];  
 
 export const weapons = [
@@ -1127,6 +1154,7 @@ export const weapons = [
     ["torch", 5000],
     ["bear trap", 5000],
     ["chopsticks", -5000],
+    ["potion", 15000],
 ];
 
 export const locationsAndPlurals = [
@@ -1391,6 +1419,7 @@ export const locationsAndPlurals = [
     ["ink cartridges", 5000],
     ["computers", 8000],
     ["the underworld", 50000],
+    ["the caribbean", 10000],
 ];
 
 export const abilities = [
@@ -1562,6 +1591,8 @@ export const abilities = [
     ["digging", 5000],
     ["teeth", -5000],
     ["forehead", -10000],
+    ["voodoo", 9000],
+    ["spell casting", 12000],
 ];  
 
 export const vehicles = [
@@ -1642,4 +1673,11 @@ export const vehicles = [
     ["segway", 2500],
     ["hover shoes", 5500],
     ["tow truck", 2000],
+    ["wheel chair", -5000],
+    ["coffin", -6000],
+    ["donkey", -5000],
+    ["rollercoaster", 12000],
+    ["squirrel-suit", 5000],
+    ["rocket boots", 15000],
+    ["web-slinging", 14000],
 ];
