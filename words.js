@@ -319,6 +319,8 @@ export const nouns = [
     ["colonel sanders", 40000],
     ["ronald McDonald", 40000],
     ["colonel", 30000],
+    ["rocket phone", 1000000],
+    ["idiot", -75000],
 ];
 
 export const adjectives = [ 
@@ -791,6 +793,8 @@ export const adjectives = [
     ["randomly screaming", -5000],
     ["bologna", -10000],
     ["spontaneously combusting", -30000],
+    ["awful", -50000],
+    ["premium", 50000],
 ];
 
 export const verbs = [
@@ -1627,6 +1631,7 @@ export const abilities = [
     ["suction", 5000],
     ["spontaneous combustion", -25000],
     ["tunneling", 5000],
+    ["touch", 30000],
 ];  
 
 export const vehicles = [
