@@ -310,6 +310,8 @@ export const nouns = [
     ["ghost-buster", 15000],
     ["dumbass", -22000],
     ["paladin", 10000],
+    ["freak", -5000],
+    ["pokemon", 25000],
 ];
 
 export const adjectives = [ 
@@ -424,7 +426,7 @@ export const adjectives = [
     ["platinum", 20000],
     ["rusty", -15000],
     ["collapsing", -16000],
-    ["broken-down", -120000],
+    ["broken-down", -100000],
     ["exploded", -50000],
     ["dying", -50000],
     ["brave", 19000],
@@ -769,6 +771,13 @@ export const adjectives = [
     ["emo", 5000],
     ["basic", -7000],
     ["fresh", 9900],
+    ["fragile", -20000],
+    ["frail", -20000],
+    ["freaky", 2000],
+    ["flammable", -25000],
+    ["flame resistant", 20000],
+    ["dull", -10000],
+    ["maxed out", 5000],
 ];
 
 export const verbs = [
@@ -963,7 +972,7 @@ export const verbs = [
     ["ignore", -10000],
     ["jump off", -5000],
     ["jump on", -5000], 
-    ["find the secret ingredient to", 50000],
+    ["find the secret ingredient for", 50000],
     ["find the secret formula for", 40000],
     ["throw up on", -10000],
     ["study", 5000],
@@ -1155,6 +1164,7 @@ export const weapons = [
     ["bear trap", 5000],
     ["chopsticks", -5000],
     ["potion", 15000],
+    ["beyblade", 25000],
 ];
 
 export const locationsAndPlurals = [
@@ -1593,6 +1603,15 @@ export const abilities = [
     ["forehead", -10000],
     ["voodoo", 9000],
     ["spell casting", 12000],
+    ["stubbornness", 10000],
+    ["frailty", -200000],
+    ["fragility", -20000],
+    ["skin", 10000],
+    ["anger", 10000],
+    ["sternness", 5000],
+    ["rage", 15000],
+    ["shaming", 5500],
+    ["suction", 5000],
 ];  
 
 export const vehicles = [
