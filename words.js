@@ -312,6 +312,13 @@ export const nouns = [
     ["paladin", 10000],
     ["freak", -5000],
     ["pokemon", 25000],
+    ["king kong", 100000],
+    ["donkey kong", 30000],
+    ["mario", 30000],
+    ["luigi", 30000],
+    ["colonel sanders", 40000],
+    ["ronald McDonald", 40000],
+    ["colonel", 30000],
 ];
 
 export const adjectives = [ 
@@ -778,6 +785,12 @@ export const adjectives = [
     ["flame resistant", 20000],
     ["dull", -10000],
     ["maxed out", 5000],
+    ["solid", 10000],
+    ["random", -10000],
+    ["buttery", -5000],
+    ["randomly screaming", -5000],
+    ["bologna", -10000],
+    ["spontaneously combusting", -30000],
 ];
 
 export const verbs = [
@@ -1612,6 +1625,8 @@ export const abilities = [
     ["rage", 15000],
     ["shaming", 5500],
     ["suction", 5000],
+    ["spontaneous combustion", -25000],
+    ["tunneling", 5000],
 ];  
 
 export const vehicles = [
