@@ -319,7 +319,6 @@ export const nouns = [
     ["colonel sanders", 40000],
     ["ronald McDonald", 40000],
     ["colonel", 30000],
-    ["rocket phone", 1000000],
     ["idiot", -75000],
 ];
 
@@ -1182,6 +1181,7 @@ export const weapons = [
     ["chopsticks", -5000],
     ["potion", 15000],
     ["beyblade", 25000],
+    ["rocket phone", 1000000],
 ];
 
 export const locationsAndPlurals = [
